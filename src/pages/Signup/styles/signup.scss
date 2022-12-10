@@ -1,0 +1,27 @@
+.navbarblack {
+    .navbar .bottom-nav .left-logo-container .inner-logo{
+        content: url('../../../assets/nav/navblack.png');
+        height: max(25px, 2vw);
+    }
+    .navbar .bottom-nav .left-logo-container .app-button {
+        color: black;
+    }
+
+    .navbar .bottom-nav .nav-links .inner-nav-link {
+        color: black;
+    }
+
+    .navbar .bottom-nav .nav-auth .search-button {
+        color: black;
+    }
+
+    .navbar .bottom-nav .nav-auth .link2 {
+        background: orangered;
+        color: white;
+    }
+
+    .navbar .bottom-nav .nav-auth .link1 {
+        color: black;
+        
+    }
+}

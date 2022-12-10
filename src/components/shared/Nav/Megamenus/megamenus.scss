@@ -1,0 +1,482 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.bottom-nav-megamenu{
+    position: fixed;
+    background: #000;
+    top: max(50px, 4vw);
+    overflow: hidden;
+    display: none;
+    border:1px solid rgb(8, 8, 8);
+    box-shadow: rgba(50, 50, 93, 0.075) 0px 3px 5px -2px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+    border-radius: max(7.5px, 0.7vw);
+    z-index: 3;
+    justify-content: space-between;
+     .left-links{
+        display: flex;
+        justify-content: space-between;
+        padding: max(20px, 2vw);
+    }
+    h5{
+        font-weight: 500;
+        font-size: max(13px, 0.825vw);
+        font-family: "Montserrat", sans-serif;
+        color:white;
+        margin-bottom: max(7.5px, 0.55vw);
+    }
+    .left-links .links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .megamenu-link{
+        display: flex;
+        align-items: center;
+        margin: max(11px, 0.9vw) 0;
+        .icon-container{
+            border:1px dashed gray;
+            width: max(40px, 3vw);
+            height: max(40px, 3vw);
+            border-radius: 50%;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            -webkit-transition: 0.3s ease-in-out;
+        }
+        .icon{
+            position: relative;
+            z-index: 2;
+            width: 50%;
+            max-height: 50%;
+            padding-left: 12px;
+            padding-top: 12px;
+            color:white;
+            transition: 0.15s ease-in-out;
+            -webkit-transition: 0.15s ease-in-out;
+        }
+        .block{
+            margin-left: max(9px, 0.75vw);
+            flex: 1;
+        }
+        h6{
+            font-size: max(13px, 0.825vw);
+            font-weight: 500;
+            color:white;
+        }
+        p{
+            font-size: max(11px, 0.8vw);
+            color:white;
+            margin-top: max(2px, 0.15vw);
+        }
+        .icon-container{
+            color: white;
+        }
+        .icon-container::before{
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            bottom: 0;
+            right:0;
+            border-radius: 50%;
+            position: absolute;
+            content: '';
+            background: orangered;
+            color: white;
+            transform: scale(0);
+            -webkit-transform: scale(0);
+            transition: 0.3s ease-in-out;
+            -webkit-transition: 0.3s ease-in-out;
+        }
+        &:hover{
+            .icon-container{
+                border:1px solid transparent;
+            }
+            .icon-container::before{
+                transform: scale(1);
+                -webkit-transform: scale(1);
+            }
+            .icon{
+                filter: brightness(0) invert(1);
+                -webkit-filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .link{
+        margin-top: max(7.5px, 0.55vw);
+        a{
+            display: flex;
+            align-items: center;
+            font-size: max(13.5px, 0.85vw);
+            color:var(--dark-color);
+            svg{
+                color:var(--main-color);
+                margin-left: max(5px, 0.35vw);
+            }
+        }
+    }
+    .category{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.navbar .solutions-megamenu{
+    width: 70%;
+    left:15%;
+    .left-links{
+        width: 75%;
+    }
+    .by-business-type{
+        width: 36%;
+        .megamenu-link{
+            width: 100%;
+        }
+    }
+    .by-role{
+        width: 62.5%;
+        .megamenu-link{
+            width: 48%;
+            margin-right: 2%;
+        }
+    }
+    // .slider-container{
+    //     width: 25%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-end;
+    //     padding: max(30px, 5vw) max(15px, 1.5vw) max(20px, 2vw);
+    //     color:#fff;
+    //     .logo{
+    //         height: max(17.5px, 1.35vw);
+    //         // content: url('../../../../../assets/shared/white-logo.svg');
+    //         margin-bottom: max(10px, 1vw);
+    //     }
+    //     h6{
+    //         font-size: max(13px, 0.825vw);
+    //         margin: max(5px, 0.35vw) 0;
+    //         font-weight: 500;
+    //         line-height: 1.65;
+    //     }
+    //     p{
+    //         font-size: max(11px, 0.8vw);
+    //         margin: max(5px, 0.35vw) 0;
+    //     }
+    //     a{
+    //         color:#000;
+    //         background: #fff;
+    //         padding:max(9px, 0.6vw) max(17.5px, 1.25vw) max(9.5px, 0.675vw);
+    //         border-radius:100vmax;
+    //         width: fit-content;
+    //         margin-top: max(10px, 1vw);
+    //         font-size: max(12px, 0.8vw);
+    //     }
+    // }
+    .rec-arrow{
+        display: none !important;
+    }
+    .rec-dot{
+        width: max(10px, 0.75vw) !important;
+        height: max(10px, 0.75vw) !important;
+        margin: max(3px, 0.2vw) !important;
+    }
+    .rec-pagination{
+        justify-content: flex-start;
+        display: flex;
+        width: 100%;
+    }
+}
+
+.navbar .company-megamenu{
+    width: 65%;
+    left:20%;
+    .left-links{
+        width: 67.5%;
+    }
+    .megamenu-link{
+        width: 48%;
+        margin-right: 2%;
+    }
+    .link{
+        margin-top: max(10px, 1vw);
+    }
+    .other-links{
+        // background: rgba(0, 0, 0, 0.035);
+        border-left: 0.3px solid grey;
+        padding: max(20px, 2vw) max(20px, 2vw) max(10px, 1vw);
+        width: 32.5%;
+    }
+    .item{
+        margin-bottom: max(10px, 1vw);
+    }
+    .other-links h6{
+        color:black;
+        font-size: max(13px, 0.825vw);
+        font-weight: 400;
+        margin-bottom: max(3px, 0.2vw);
+        padding-left: max(20px,2vw);
+    }
+    .links2{
+        display: flex;
+        flex-direction: column;
+        a{ 
+            color:var(--light-text);
+            font-size: max(12px, 0.8vw);
+            margin: max(3px, 0.2vw) 0;
+            line-height: 1.5;
+            &:hover{
+                color:var(--main-color);
+            }
+        }
+    }
+}
+
+.img-about-us{
+    width:250px;
+    height:250px;
+    padding-left: 4px;
+}
+.navbar .resources-megamenu{
+    width: 65%;
+    left:20%;
+    .links{ justify-content: space-between;}
+    .megamenu-link{
+        width: 30%;
+    }
+}
+
+//products megamenu--------------------------------
+.navbar .products-megamenu{
+    width: 88%;
+    left: 6%;
+  .tabs{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+   .react-tabs__tab-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20%;
+        padding: max(15px, 1.5vw) max(15px, 1.5vw) max(15px, 1.5vw) 0;
+    }
+    .react-tabs__tab{
+        cursor: pointer;
+        margin: max(6px, 0.4vw) 0;
+        padding: max(11px, 0.75vw) max(12.5px, 1.5vw);
+        font-size: max(11px, 0.825vw);
+    }
+    .react-tabs__tab--selected{
+        border-left:10px solid orangered;
+        margin-left: -3px;
+        background-size: cover;
+        color:black;
+    }
+}
+
+.div-centered-item1{
+    margin-left: 35%;
+}
+
+.div-centered-item2{
+    margin-top: 5%;
+}
+.div-centered-item3{
+    margin-top: 5%;
+  
+}
+.centered-item1{
+    color: orangered;
+    background-color: transparent;
+    border: 2px solid orangered;
+    border-radius: 100vw;
+    font-size: 10px;
+    padding: 10px 25px;
+}
+.navbar .products-megamenu .tab-panel{
+    width: 80%;
+    border-left: 1px solid #eee;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    padding-left: max(15px, 1.5vw);
+    .inner-panel{
+        display: flex;      
+    }
+    .inner-links{
+        min-height: max(30vw, 500px);  
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex: 1;
+        padding:max(15px, 1.5vw) 0;
+    }
+    h5{
+        width: 100%;
+    }
+    .link{
+        width: 100%;
+    }
+    .payments, .business-operations, .toolbox{
+        .megamenu-link{
+            width: 30%;
+            margin-right: 3.25%;
+        }
+    }
+    .financial-services, .apis-integrations, .monetization-platform, .ecommerce{
+        .megamenu-link{
+            width: 47%;
+            margin-right: 3%;
+        }
+    }
+    .slider-container{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: max(30px, 6vw) max(12.5px, 1.25vw) max(20px, 3vw);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        color:#fff;
+        .logo{
+            height: max(17.5px, 1.35vw);
+            // content: url('../../../../../assets/shared/white-logo.svg');
+            margin-bottom: max(10px, 1vw);
+        }
+        h6{
+            font-size: max(13px, 0.825vw);
+            margin: max(5px, 0.35vw) 0;
+            font-weight: 500;
+            line-height: 1.65;
+        }
+        p{
+            font-size: max(11px, 0.8vw);
+            margin: max(5px, 0.35vw) 0;
+        }
+        a{
+            color:#000;
+            background: #fff;
+            padding:max(9px, 0.6vw) max(17.5px, 1.25vw) max(9.5px, 0.675vw);
+            border-radius:100vmax;
+            width: fit-content;
+            margin-top: max(10px, 1vw);
+            font-size: max(12px, 0.8vw);
+        }
+    }
+    .rec-arrow{
+        display: none !important;
+    }
+    .rec-dot{
+        width: max(10px, 0.75vw) !important;
+        height: max(10px, 0.75vw) !important;
+        margin: max(3px, 0.2vw) !important;
+    }
+    .rec-pagination{
+        justify-content: flex-start;
+        display: flex;
+        width: 100%;
+        padding:0 7.5px;
+    }
+}
+
+@media(max-width:1150px){
+    .navbar .solutions-megamenu{
+        width: 90%;
+    }
+    .navbar .company-megamenu, .navbar .resources-megamenu{
+        width: 75%;
+        left: 15%;
+    }
+    .navbar .products-megamenu{
+        width: 93%;
+        left: 3.5%;
+    }
+}
+
+body.dark-mode{
+    .bottom-nav-megamenu{
+        background: #121019;
+        border:1px solid #373540;
+        h5{
+            color:var(--light-text);
+        }
+        .megamenu-link{
+            .icon-container{
+                border:1px solid #474553;
+            }
+            &:hover .icon-container{
+                border:1px solid transparent;
+            }
+        }
+        .link a{  
+            color: #fff;
+        }
+    }
+    // .navbar .company-megamenu .other-links{
+    //     background: rgba(255, 255, 255, .035);
+    // }
+    .navbar .products-megamenu .tab-panel{
+        border-left: 1px solid #373540;
+    }
+}
+
+
+body.dark-mode {
+    .navbar .products-megamenu  .tabs .react-tabs__tab-list .react-tabs__tab{
+        color: white;
+    }
+    .products-megamenu .tab-panel .inner-panel .inner-links .megamenu-link .block h6{
+        color: white;
+    }
+    .products-megamenu .tab-panel .inner-panel .inner-links .megamenu-link .block p{
+        color: white;
+    }
+    .products-megamenu .tab-panel .inner-panel .inner-links .megamenu-link .icon-container .centered-item .icon{
+        color: white;
+    }
+    .products-megamenu .tab-panel .inner-panel .div-centered-item1 .centered-item1{
+        color: white;
+        border:2px solid white;
+    }
+    .products-megamenu .tab-panel .inner-panel .inner-links h5{
+        color: white;
+    }
+
+    .company-megamenu .left-links .category h5{
+        color: white;
+    }
+
+    .company-megamenu .left-links .category .megamenu-link .block h6{
+        color: white;
+    }
+
+    .company-megamenu .left-links .category .megamenu-link .block p{
+        color: white;
+    }
+
+    .company-megamenu .left-links .category .div-centered-item2 .centered-item1{
+        color: white;
+        border: 2px solid white;
+    }
+
+    .solutions-megamenu .left-links .category div h5{
+        color: white;
+    }
+
+    .solutions-megamenu .left-links .category .links .megamenu-link .block h6{
+        color: white;
+    }
+
+    .solutions-megamenu .left-links .category .links .megamenu-link .block p{
+        color: white;
+    }
+
+    .solutions-megamenu .left-links .category .div-centered-item3 .centered-item1{
+        color: white;
+        border: 2px solid white;
+    }
+
+    .company-megamenu .other-links h5{
+        color: white;
+    }
+}

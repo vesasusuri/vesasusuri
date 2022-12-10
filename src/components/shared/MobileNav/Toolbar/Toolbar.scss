@@ -1,0 +1,41 @@
+.navbar .mobile-toolbar{
+    background-color: white;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    z-index:2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22.5px 7.5% 17.5px;
+    .mobile-logo-row a{
+        display: flex;
+        align-items: center;
+        .shared-logo{
+            height:40px;
+        }
+    }
+    button{
+        border:0;
+        background-color: transparent;
+        font-size: 35px;
+        cursor: pointer;
+        color:#111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.toolbar__sticky{
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    box-shadow: rgba(88, 88, 88, 0.1) 0px 3px 5px 0px;
+}
+
+body.dark-mode .navbar .mobile-toolbar{
+    background: #1A1A1A !important;
+    button{ color:#fff !important; }
+}

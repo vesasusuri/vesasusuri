@@ -1,0 +1,56 @@
+.navbarblack {
+    .navbar .bottom-nav .left-logo-container .inner-logo {
+        content: url('../../../assets/nav/navblack.png');
+        height: max(25px, 2vw);
+    }
+
+    .navbar .bottom-nav .left-logo-container .logo-black {
+        display: none;
+    }
+
+    .navbar .bottom-nav .left-logo-container .app-button {
+        color: black;
+    }
+
+    .navbar .bottom-nav .nav-links .inner-nav-link {
+        color: black;
+    }
+
+    .navbar .bottom-nav .nav-auth .link2 {
+        background: orangered;
+        color: white;
+    }
+
+    .navbar .bottom-nav .nav-auth .link1 {
+        color: black;
+
+    }
+
+    .footerr {
+        margin-top: 200px;
+    }
+}
+
+body.dark-mode {
+    background-color: #10121C;
+
+    .navbarblack {
+        .navbar .bottom-nav .left-logo-container .inner-logo {
+            content: url('../../../assets/nav/logo.png');
+            height: max(25px, 2vw);
+        }
+
+        .navbar .bottom-nav .left-logo-container .app-button {
+            color: white;
+        }
+
+        .navbar .bottom-nav .nav-auth .search-button {
+            color: white;
+        }
+
+        .navbar .bottom-nav .nav-auth .link1 {
+            color: white;
+
+        }
+    }
+}
