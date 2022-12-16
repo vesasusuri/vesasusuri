@@ -1,5 +1,5 @@
 .shared-footer{
-    background-color: black;
+    background-color:#000000;
     color:#fff;
     padding: max(40px, 4%) 9% max(10px, 1vw);
 }
@@ -19,16 +19,18 @@
     }
 }
 .shared-white-logo{
-    content: url('../../../../assets/nav/logofooter.png');
-    height: max(20px, 1.5vw);
+    content: url('../../../../assets/home/logo2.png');
+    height: max(35px, 3vw);
     flex-direction: row;
+    position: relative;
+    top: 30px;
 }
 .shared-footer .first-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: max(40px, 4vw);
-    border-bottom: 1px solid #555;
+    // border-bottom: 1px solid #555;
     
     .p1{
         font-size: max(14px, 0.9vw);

@@ -1,6 +1,4 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
-import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import { SolutionData1} from "./data";
 
@@ -33,33 +31,17 @@ const SolutionsMenu = () => {
                   })}
                 </div>
               </div>
-              <div className="div-centered-item3">
+              {/* <div className="div-centered-item3">
                 <Link to={props.to1} className="centered-item1">
                   <FormattedMessage id="view-all" defaultMessage="View-all" />
                   <BsArrowRight />
                 </Link>
-              </div>
+              </div> */}
             </div>
           );
         })}
+      </div>    
       </div>
-      {/* <div className="slider-container">
-       <Carousel className="slider" itemsToShow={1}>
-          {SolutionData2.map((props) => {
-            return (
-              <div className="slider-item" key={props.id}>
-                <div className="logo"></div>
-                <h6>{props.title}</h6>
-                <p>{props.text}</p>
-              </div>
-            );
-          })}
-        </Carousel> 
-        <Link to="/">
-          <FormattedMessage id="learn-more" defaultMessage="Learn more" />
-        </Link>
-      </div> */}
-    </div>
   );
 };
 

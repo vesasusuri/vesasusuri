@@ -1,9 +1,8 @@
 import React from "react";
-import { CompanyData1, CompanyData2 } from "./data";
-import { BsArrowRight } from "react-icons/bs";
+import { CompanyData1 } from "./data";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
-import about from "../../../../assets/nav/about.png"
+// import about from "../../../../assets/nav/about.png"
 const CompanyMenu = () => {
   return (
     <div className="bottom-nav-megamenu company-megamenu">
@@ -33,12 +32,12 @@ const CompanyMenu = () => {
                   })}
                 </div>
               </div>
-              <div className="div-centered-item2">
+              {/* <div className="div-centered-item2">
                 <Link to={props.to1} className="centered-item1">
                   <FormattedMessage id="view-all" defaultMessage="View-all" />
                   <BsArrowRight />
                 </Link>
-              </div>
+              </div> */}
             </div>
           );
         })}
@@ -51,7 +50,7 @@ const CompanyMenu = () => {
           />
         </h5>
 
-        <img src={about} className="img-about-us"/>
+        {/* <img src={about} className="img-about-us"/> */}
         {/* {CompanyData2.map((props) => {
                     return(
                         <div className="item" key={props.id}>

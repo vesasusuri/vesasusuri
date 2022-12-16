@@ -19,7 +19,8 @@ import Loading from "./components/shared/Loading/Loader";
 const Home = lazy(() => import('./pages/Home/Home'));
 const Login = lazy(() => import('./pages/Login/Login'));
 const Signup = lazy(() => import('./pages/Signup/Signup'));
-const Products = lazy(() => import('./pages/Products/Products'));
+const OurTeam = lazy(() => import('./pages/ourTeam/OurTeam'));
+
 function App() {
   const language = useSelector((state) => state.language.language);
 
@@ -38,9 +39,10 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/ourTeam" element={<OurTeam/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/signup" element={<Signup/>} />
-        <Route exact path="/products" element={<Products/>} />
+        {/* <Route exact path="/products" element={<Products/>} /> */}
         <Route path="*" element={<Navigate to ="/" />}/>
       </Routes>
       </IntlProvider>

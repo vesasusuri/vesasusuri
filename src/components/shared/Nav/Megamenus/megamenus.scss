@@ -3,11 +3,11 @@ body{
 }
 .bottom-nav-megamenu{
     position: fixed;
-    background: #000;
+    background-color:#10121C;
     top: max(50px, 4vw);
     overflow: hidden;
     display: none;
-    border:1px solid rgb(8, 8, 8);
+    border:1px solid rgb(18, 16, 16);
     box-shadow: rgba(50, 50, 93, 0.075) 0px 3px 5px -2px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
     border-radius: max(7.5px, 0.7vw);
     z-index: 3;
@@ -121,8 +121,8 @@ body{
 }
 
 .navbar .solutions-megamenu{
-    width: 70%;
-    left:15%;
+    width: 60%;
+    left:25%;
     .left-links{
         width: 75%;
     }
@@ -171,19 +171,19 @@ body{
     //         font-size: max(12px, 0.8vw);
     //     }
     // }
-    .rec-arrow{
-        display: none !important;
-    }
-    .rec-dot{
-        width: max(10px, 0.75vw) !important;
-        height: max(10px, 0.75vw) !important;
-        margin: max(3px, 0.2vw) !important;
-    }
-    .rec-pagination{
-        justify-content: flex-start;
-        display: flex;
-        width: 100%;
-    }
+    // .rec-arrow{
+    //     display: none !important;
+    // }
+    // .rec-dot{
+    //     width: max(10px, 0.75vw) !important;
+    //     height: max(10px, 0.75vw) !important;
+    //     margin: max(3px, 0.2vw) !important;
+    // }
+    // .rec-pagination{
+    //     justify-content: flex-start;
+    //     display: flex;
+    //     width: 100%;
+    // }
 }
 
 .navbar .company-megamenu{

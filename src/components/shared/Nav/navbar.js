@@ -54,14 +54,11 @@ const BottomNav = () => {
                 </div>
 
                 <div className='nav-auth'>
-                    {/* <button className="search-button">
-                        <BiSearch />
-                    </button> */}
                     <Link to='/login' className='link1'>
-                        <FormattedMessage id='log-in' defaultMessage='Log In' />
+                        <FormattedMessage id='.logIn()' defaultMessage='.logIn()' />
                     </Link>
                     <Link to='/signup' className='link2'>
-                        <FormattedMessage id='sign-up' defaultMessage='Sign Up' />
+                        <FormattedMessage id='.signUp()' defaultMessage='.signUp()' />
                     </Link>
                 </div>
 

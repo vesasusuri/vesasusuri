@@ -83,7 +83,7 @@
     align-items: center;
     padding: max(1.75vw, 20px) 0.5vw;
     font-size: max(12px, 0.875vw);
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Red Hat Mono', monospace;    
     position: relative;
     z-index: 2;
 
@@ -116,10 +116,10 @@
   }
 
   .link2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Red Hat Mono', monospace;
     background: white;
     color: indianred;
-    font-weight: 600;
+    font-weight: 400;
     padding: max(9px, 0.65vw) max(17.5px, 1.5vw);
     border-radius: 100vw;
 
@@ -127,8 +127,8 @@
 
   .link1 {
     color: white;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-family: 'Red Hat Mono', monospace;
     margin: 0 max(15px, 1.5vw) 0 max(11px, 1.25vw);
   }
 
@@ -151,7 +151,7 @@
 
 .nav__sticky {
   .bottom-nav {
-    background-color: black;
+    background-color:#10121C;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .bottom-nav .left-logo-container .logo-black{

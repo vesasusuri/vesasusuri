@@ -23,20 +23,15 @@ const Footer = (props) => {
         <div className='shared-footer'>
             <div className='shared-footer1'>
             <div className="shared-white-logo"></div>
-            <p className='p'>Download our app on your Iphone or Android</p>
             <p className='p2'>Follow us:</p>
             </div>
             <div className="first-row">
                 
                 <div className="left">
-                    
-                    <p className='p1'>
-                        <FormattedMessage id='footer-p1' 
-                        defaultMessage='Maximize your sales of software, SaaS and digital solutions.' />
-                    </p>                   
+                                   
                 </div>
                 <div className="buttons">
-                    <button>
+                    {/* <button>
                         <div className="icon icon2"></div>
                         <div className="block">
                             <small>Download on the</small>
@@ -49,7 +44,7 @@ const Footer = (props) => {
                             <small>GET IT ON</small>
                             <h5>Google Play</h5>
                         </div>
-                    </button>
+                    </button> */}
                 </div> 
                 <div className="left">
                     <a href='#'><FaFacebookF /></a>
@@ -58,7 +53,7 @@ const Footer = (props) => {
                     <a href='#'><FaLinkedinIn /></a>
                 </div>
             </div>
-
+{/* 
             <div className='all-footer-links'>
                 {FooterData.map((props) => {
                     return(
@@ -76,7 +71,7 @@ const Footer = (props) => {
                         </div>
                     )
                 })}
-            </div>
+            </div> */}
             
              <div className="second-row">
                     <p className="sub">
@@ -104,21 +99,13 @@ const Footer = (props) => {
             <div className="third-row">
                 <p className='p2'>
                     <FormattedMessage id='footer-p2' 
-                    defaultMessage='© 2022 Pay2Gate. All rights reserved.' />
+                    defaultMessage='© 2022 Digi Lab. All rights reserved.' />
                 </p>
                 
-                <div className="links">
-                    <Link to='/'><FormattedMessage id='pay2Gate' defaultMessage='Pay2Gate' /></Link>
-                    <span>|</span>
-                    <Link to='/'><FormattedMessage id='privacy' defaultMessage='Privacy' /></Link>
-                    <span>|</span>
-                    <Link to='/'><FormattedMessage id='copyright' defaultMessage='Copyright' /></Link>
-                    <span>|</span>
-                    <Link to='/'><FormattedMessage id='terms-of-use' defaultMessage='Terms of use' /></Link>
-                </div>
+             
 
                 <div className="right">
-                   <ThemeSwitcher />
+                   {/* <ThemeSwitcher /> */}
                     {/* <div className="settings-container">
                         <div className="settings-icon" onClick={showSettings}>
                             <BiCog className='icon1' />
