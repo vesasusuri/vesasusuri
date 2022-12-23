@@ -19,10 +19,10 @@ import ModalLendriti from "./lendrititModal";
 
 const OurTeamData =[
     {
+        closeBTN:<Link><SpringModal/></Link>,
         img:man,
         emri:<FormattedMessage id="arianit" defaultMessage="Aritanit Tershnjaku"/>,
-        role:<FormattedMessage id="role" defaultMessage="Software Engineer"/>,
-        closeBTN:<Link><SpringModal/></Link>
+        role:<FormattedMessage id="role" defaultMessage="Software Engineer"/>
     },
     {
         img:man,

@@ -22,14 +22,14 @@ function OurTeam2() {
               <div className="top">
                 <div className="comment">
                   <div className="comment">Hi there</div>
-                  <span>Vesa</span>
+                  
                   <div className="button">Read More</div>
                 </div>
               </div>
               <div className="info">
                 <h6 className="name">{props.emri}</h6>
                 <p className="role">{props.role}</p>
-                {props.closeBTN}
+                <button className="buttonclose">{props.closeBTN}</button>
               </div>
             </div>
           );
