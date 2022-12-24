@@ -6,6 +6,7 @@ import Banner2 from "../../components/pages/banner2/banner2";
 import Carousel3 from "../../components/shared/Carusel3/Carousel3";
 import Carousel4 from "../../components/shared/Carusel4/Carusel4";
 import Korikula from "../../components/shared/Korikula/Korikula";
+import Code from "../../components/pages/codeBanner/code";
 function Home() {
     return(
        <>

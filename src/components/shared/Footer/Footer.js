@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { BiCog, BiEnvelope } from 'react-icons/bi';
+import { BiEnvelope } from 'react-icons/bi';
 import { FormattedMessage } from 'react-intl';
-import { Link } from 'react-router-dom';
-import { FooterData } from './FooterData'
 import SelectLanguage from '../SelectLanguage/SelectLanguage';
 import './styles/footer.scss'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
-import ThemeSwitcher from './ThemeSwitcher';
+
 
 const Footer = (props) => {
 
@@ -31,20 +29,7 @@ const Footer = (props) => {
                                    
                 </div>
                 <div className="buttons">
-                    {/* <button>
-                        <div className="icon icon2"></div>
-                        <div className="block">
-                            <small>Download on the</small>
-                            <h5>App Store</h5>
-                        </div>
-                    </button>
-                    <button className='button1'>
-                        <div className="icon icon1"></div>
-                        <div className="block">
-                            <small>GET IT ON</small>
-                            <h5>Google Play</h5>
-                        </div>
-                    </button> */}
+                 
                 </div> 
                 <div className="left">
                     <a href='#'><FaFacebookF /></a>
@@ -53,25 +38,6 @@ const Footer = (props) => {
                     <a href='#'><FaLinkedinIn /></a>
                 </div>
             </div>
-{/* 
-            <div className='all-footer-links'>
-                {FooterData.map((props) => {
-                    return(
-                        <div className="footer-list">
-                            <h6>{props.category}</h6>
-                            <div className="links">
-                                {props.links.map((l) => {
-                                    return (
-                                        <Link key={l.to} to={l.to} className="footer-item">
-                                            {l.link}
-                                        </Link>
-                                    );
-                                })}
-                            </div>
-                        </div>
-                    )
-                })}
-            </div> */}
             
              <div className="second-row">
                     <p className="sub">
@@ -105,14 +71,6 @@ const Footer = (props) => {
              
 
                 <div className="right">
-                   {/* <ThemeSwitcher /> */}
-                    {/* <div className="settings-container">
-                        <div className="settings-icon" onClick={showSettings}>
-                            <BiCog className='icon1' />
-                            <MdKeyboardArrowDown className='icon2' />
-                        </div>
-                        {settings ? <SettingsMenu /> : null }
-                    </div> */}
                      <SelectLanguage
                         setLanguage={props.setLanguage}
                         language={props.language}

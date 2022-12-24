@@ -11,7 +11,7 @@ function ModalVesa() {
 
   return (
     <>
-      <Button variant="primary" classname="btnRead" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow}>
         Read More
       </Button>
 

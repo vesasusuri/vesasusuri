@@ -16,7 +16,7 @@ function ModalAlmir() {
       </Button>
 
       <Modal show={show} onHide={handleClose} className="modal">
-        <Modal.Header closeButton>
+        <Modal.Header >
           <div className="alldiv">
             <div className="divBorder"></div>
             <Button variant="secondary" className="xbtn" onClick={handleClose}>

@@ -2,12 +2,13 @@
 .banner1-background {
     width: 100%;
     height: 50rem;
-    
-    background: linear-gradient(219.46deg, #110036 27.63%, #170059 100%), linear-gradient(219.46deg, #FFFFFF 27.63%, #19004E 100%), radial-gradient(100% 246.94% at 100% 100%, #FFFFFF 0%, #000353 100%), linear-gradient(121.18deg, #1400FF 0.45%, #3A0000 100%), linear-gradient(192.86deg, #F06060 9.22%, #008B7A 87.25%), linear-gradient(150.76deg, #0015D5 15.35%, #000B6C 89.57%);
-    background-blend-mode: screen, overlay, overlay, difference, difference, normal;
+    // background-image: url('../../../../assets/shared/gradient.jpg');
 
-    // background: linear-gradient(180deg, #F7D6FF 0%, #005686 100%), linear-gradient(180deg, #FFFFFF 0%, #060046 100%), linear-gradient(130deg, #00FFA3 0%, #1A003C 100%), linear-gradient(307deg, #FF0000 0%, #3300C6 100%), radial-gradient(50% 72% at 50% 50%, #004584 0%, #00FFB2 100%), radial-gradient(100% 140% at 100% 0%, #5ED500 0%, #2200AA 100%);
-    // background-blend-mode: soft-light, overlay, difference, difference, color-burn, normal;
+    // background: linear-gradient(219.46deg, #110036 27.63%, #170059 100%), linear-gradient(219.46deg, #FFFFFF 27.63%, #19004E 100%), radial-gradient(100% 246.94% at 100% 100%, #FFFFFF 0%, #000353 100%), linear-gradient(121.18deg, #1400FF 0.45%, #3A0000 100%), linear-gradient(192.86deg, #F06060 9.22%, #008B7A 87.25%), linear-gradient(150.76deg, #0015D5 15.35%, #000B6C 89.57%);
+    // background-blend-mode: screen, overlay, overlay, difference, difference, normal;
+
+    background: linear-gradient(180deg, #F7D6FF 0%, #005686 100%), linear-gradient(180deg, #FFFFFF 0%, #060046 100%), linear-gradient(130deg, #00FFA3 0%, #1A003C 100%), linear-gradient(307deg, #FF0000 0%, #3300C6 100%), radial-gradient(50% 72% at 50% 50%, #004584 0%, #00FFB2 100%), radial-gradient(100% 140% at 100% 0%, #5ED500 0%, #2200AA 100%);
+    background-blend-mode: soft-light, overlay, difference, difference, color-burn, normal;
 
     position: relative; 
     clip-path: polygon(100% 0, 100% 40%, 100% 59%, 0 91%, 0 0, 70% 0);
@@ -19,7 +20,7 @@
 .BannerText{
     position: absolute;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: -40rem;
     margin-left:8rem;
