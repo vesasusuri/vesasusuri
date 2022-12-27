@@ -17,8 +17,9 @@ function ModalFloranda() {
 
       <Modal show={show} onHide={handleClose} className="modal">
         <Modal.Header closeButton>
-          <div className="alldiv">
-            <div className="divBorder"></div>
+        <div className="alldiv">
+          <div className="divModal11"></div>           
+          <div className="alldi2v">
             <Button variant="secondary" className="xbtn" onClick={handleClose}>
               X
             </Button>
@@ -36,6 +37,7 @@ function ModalFloranda() {
               <Modal.Body className="skills01">#React</Modal.Body>
               <Modal.Body className="skills01">#webDevelopment</Modal.Body>
               <Modal.Body className="skills01">#php</Modal.Body>
+            </div>            
             </div>
           </div>
         </Modal.Header>

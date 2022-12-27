@@ -1,5 +1,6 @@
 import "./styles/ourTeam.scss";
 import OurTeamData from "./ourTeamData";
+import lineimg from "../../../assets/home/line1.png";
 
 import { FormattedMessage } from "react-intl";
 
@@ -11,7 +12,8 @@ function OurTeam2() {
           id=".digitalSchoolTeachersTeam"
           defaultMessage=".digitalSchoolTeachersTeam"
         />
-      </p>      <div className="OurTeam">
+      </p>{" "}
+      <div className="OurTeam">
         {OurTeamData.map((props) => {
           return (
             <div className="ourTeamInsideDiv">
@@ -19,17 +21,13 @@ function OurTeam2() {
                 className="profile"
                 style={{ content: `url(${props.img})` }}
               ></div>
-              <div className="top">
-                <div className="comment">
-                  <div className="comment">Hi there</div>
-                  
-                  <div className="button">Read More</div>
-                </div>
-              </div>
+              
               <div className="info">
                 <h6 className="name">{props.emri}</h6>
-                <p className="role">{props.role}</p>
-                <button className="buttonclose">{props.closeBTN}</button>
+                
+                <img src={lineimg} className="pic" />
+                <p className="role"><span className="colorpink">.</span>{props.role}<span className="colorpink">()</span></p>
+                <button className="buttonclose">.{props.closeBTN}()</button>
               </div>
             </div>
           );

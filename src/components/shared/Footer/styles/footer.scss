@@ -1,50 +1,97 @@
 .shared-footer{
-    background-color:#000000;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95)), url('../../../../assets/home/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color:#fff;
-    padding: max(40px, 4%) 9% max(10px, 1vw);
+    padding: max(40px, 4%) 9% max(15px, 1.5vw);
 }
 
-.shared-footer1{
+.shared-footer .main-top{
+    text-align: center;
+    .shared-white-logo{
+        height: max(25px, 2vw);
+        margin:0 auto; 
+    }
+    h6{
+        font-size: max(20px, 1.6vw);
+        font-weight: 500;
+        margin: max(10px, 1vw) 0 max(15px, 1.5vw);
+    }
+    a{ margin:0 auto; }
+}
+
+.shared-footer .all-footer-links{
     display: flex;
     justify-content: space-between;
+    margin: max(40px, 5vw) 0;
+    .footer-list{
+        width: fit-content;
+        max-width: 18.5%;
+    }
+    .footer-list h6{
+        font-size: max(14px, 0.9vw);
+        margin-bottom: max(17.5px, 1.5vw);
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: max(7.5px, 0.6vw);
+        position: relative;
+        &::before{
+            width: max(25px, 2vw);
+            position: absolute;
+            left:0;
+            bottom:0;
+            height: 2px;
+            background: #fff;
+            content: '';
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        a{
+            color:#E5E5E5;
+            font-size: max(13px, 0.85vw);
+            margin:max(7.5px, 0.55vw) 0;
+            transition: 0.1s ease-in;
+            -webkit-transition: 0.1s ease-in;
+        }
+        a:hover{
+            color: var(--main-color);
+        }
+    }
+}
+
+.shared-footer .third-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: max(15px, 1.5vw) 0;
+    border-top: 1px solid #777;
     .p{
-        font-size: max(12px,0.1vw);
-        position: relative;
-        left: 70px;
+        font-size: max(13px, 0.85vw);
+        width: fit-content;
+        max-width: 100%;
+        text-align: center; 
     }
-    .p2{
-        font-size: max(12px,0.1vw);
-        position: relative;
-        left: -130px;
+    .right-side{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: fit-content;
+        max-width: 100%;
     }
 }
-.shared-white-logo{
-    content: url('../../../../assets/home/logo2.png');
-    height: max(35px, 3vw);
-    flex-direction: row;
-    position: relative;
-    top: 30px;
-}
-.shared-footer .first-row{
+
+.shared-footer .last-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: max(40px, 4vw);
-    // border-bottom: 1px solid #555;
-    
-    .p1{
-        font-size: max(14px, 0.9vw);
-        margin-top: max(17px, 1vw);
-        font-family: 'Prompt', sans-serif;
-        width: max(23rem,1.3vw);
-        color: gray;
-    }
     .buttons{
         display: flex;
-        margin-left: 20px;
     }
     .buttons button{
-        background-color: black;
+        background-color: #000;
         border:0;
         color:#fff;
         display: flex;
@@ -54,303 +101,148 @@
         border-radius: max(5px, 0.35vw);
         text-align: left;
         width: fit-content;
-        min-width: max(9.4vw, 125px);
+        &:hover{ background: #111;}
         .block{
-            color:white;
             width: fit-content;
         }
         small{
-            font-size: max(9px, 0.65vw);
+            font-size: max(8px, 0.6vw);
         }
         h5{
             font-weight: 500;
-            font-size: max(13px, 0.9vw);
+            font-size: max(12px, 0.8vw);
         }
     }
     .icon{
-        height: max(22px, 1.5vw);
+        height: max(20px, 1.35vw);
         margin-right: max(7.5px, 0.55vw);
     }
-    .icon1{
-        content: url('../../../../assets/shared/google-play.svg');
-    }
-    .icon2{
-        content: url('../../../../assets/shared/app-store.svg');
-    }
-}
-
-.left{
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    a{
-        background: white;
-        width: max(30px, 2.35vw);
-        height: max(30px, 2.35vw);
+    // .icon1{
+    //     content: url('../../../assets/shared/google-play.svg');
+    // }
+    // .icon2{
+    //     content: url('../../../assets/shared/app-store.svg');
+    // }
+    .center-links{
         display: flex;
-        align-items: center;
         justify-content: center;
-        color:black;
-        font-size: max(17.5px, 1.1vw);
-        margin-right: max(10px, 0.8vw);
-        border-radius: 50vw;
-        transition: 0.15s ease-in-out;
-        -webkit-transition: 0.15s ease-in-out;
-        &:hover{
-            background: #d025f1;
-            color: white;
-        }
-    }
-}
-.shared-footer .second-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: max(25px, 2vw) 0;
-    margin: max(35px, 3vw) 0 max(15px, 1.5vw);
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555;
-    font-family: 'Prompt', sans-serif;
-
-   .email-container{
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        max-width: 75%;
-        p{
-            font-size: max(14px, 0.9vw);
-            font-weight: 500;
-            margin-right: max(15px, 1.25vw);
-            font-family: 'Prompt', sans-serif;
-        }
-    }
-    form{
-        background: black;
-        display: flex;
-        align-items: left;
-        justify-content: flex-end;
-        border:1px solid #555;
-        border-radius: max(20px, 1.5vw);
-     
-        span{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: max(15px, 1vw);
-            margin:0 max(4px, 0.25vw) 0 max(15px, 1vw);
-        }
-    }
-    input{
-        flex: 1;
-        height: max(40.5px, 3.2vw);
-        background: none;
-        color:gray;
-        padding:0 max(3px, 0.25vw);
-        font-size: max(12px, 0.775vw);
-        border:0;
-        width: max(200px, 17.5vw);
-        &::placeholder{
-            color:gray;
-            font-family: 'Prompt', sans-serif;
-        }
-    }
-    form button{
-        color:#fff;
-        background-color: #d025f1;
-        border:0;
-        border-radius: max(20px, 1.5vw);
-        height: max(40.5px, 3.2vw);
-        padding:0 max(13px, 1.5vw);
-        font-size: max(13px, 0.85vw);
-        padding-top: 1px;
-        font-family: 'Prompt', sans-serif;
-
-    }
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0px 1000px #222 inset;
-        box-shadow: 0 0 0px 1000px #222 inset;
-        -webkit-text-fill-color: #fff !important;
-    }
-}
-
-
-.shared-footer .third-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    .p2{
-        font-family: 'Prompt', sans-serif;
-        font-size: max(14px, 0.875vw);
-    }
-    .links{
-        display: flex;
         width: fit-content;
         max-width: 100%;
-        justify-content: center;
-        font-family: 'Prompt', sans-serif;
+        flex-wrap: wrap;
     }
-    .links a{
-        font-size: max(13px, 0.825vw);
-        color:#fff;
-        margin:max(5px, 0.4vw);
+    .center-links a{
+        font-size: max(12.5px, 0.8vw);
+        color:#E5E5E5;
         transition: 0.1s ease-in;
         -webkit-transition: 0.1s ease-in;
         &:hover{ 
-            color: orangered; 
+            color: var(--main-color); 
         }
     }
-    .links span{
-        font-size: max(13.5px, 0.85vw);
-        margin:max(5px, 0.4vw);
+    .center-links span{
+        font-size: max(13px, 0.825vw);
+        color:#E5E5E5;
     }
-    .right{
+    .social-medias{
         display: flex;
         align-items: center;
         justify-content: center;
         width: fit-content;
         max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .social-medias a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#fff;
+        font-size: max(18px, 1.35vw);
+        margin:max(7.5px, 0.5vw);
+        &:hover{ color:var(--main-color); }
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media(max-width:1250px){
     .shared-footer{
-        padding: 40px 4% 15px;
+        padding: max(40px, 4%) 3.5% max(15px, 1.5vw);
     }
 }
 
-@media only screen and (max-width: 1020px) {
-    .shared-footer .second-row{
-        flex-wrap: wrap;
-        padding: max(25px, 2vw) 0;
-        margin: max(35px, 3vw) 0 max(15px, 1.5vw);
-        border-top: 1px solid #555;
-        border-bottom: 1px solid #555;
-        .left{
-            width: 100%;
-            justify-content: center;
-            margin-bottom: 20px;
-            a{ margin:7.5px; }
-        }
-        .email-container{
-            width: 100%;
-            flex-wrap: wrap;
-            max-width: 100%;
-            p{
-                margin: 0 0 15px;
-                width: 100%;
-                text-align: center;
-            }
-        }
-        form{
-            width: 400px;
-            max-width: 100%;
-            margin:0 auto;
-            border-radius: 25px;
-        }
-        input{
-            flex: 1;
-            width: unset;
-            height: 42px;
-        }
-        form button{
-            height: 38px;
-            border-radius: 25px;
-            padding: 2px 20px;
-            margin-right: 2px;
-            margin-top: 3px;
-        }
-    }
-    
-    
-    .shared-footer .third-row{
-        justify-content: center;
-        .p2{
-            text-align: center;
-            margin:10px 0;
-        }
-        .links{
-            flex-wrap: wrap;
-            width: 100%;
-            max-width: 100%;
-        }
-        .links a{
-            font-size: 14px;
-            color:#fff;
-            margin:7.5px;
-        }
-        .links span{ display: none; }
-        .right{
-            width: 100%;
-            max-width: 100%;
-            margin-top: 10px;
-        }
-        .settings-container, 
-        .mode-switcher-container,
-        .select-language{
-            margin:10px;
-        }
-    }
-}
 
-@media only screen and (max-width: 767px) {
-    .shared-footer .first-row{
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        .left{ 
-            width:100%;
-            margin-bottom:25px;
-            margin-left: 5rem;
-        }
-        .shared-white-logo{
-            margin: 0 auto;
-        }
-        .p1{
-            text-align: center;
-            margin-left: -5rem;
-        }
-        .buttons{
-            justify-content: center;
-            margin-left: 0;
-            width: 100%;
-        }
-        .buttons button{
-            margin: 7.5px;
-        }
+
+
+@media(max-width:1020px){
+    .shared-footer .main-top{
+       padding:0 3.5%;
     }
     
-    .all-footer-links{
+    .shared-footer .all-footer-links{
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
+        margin: 20px 0;
         .footer-list{
-            width: 30%;
-            text-align: center;
-            max-width: 30%;
-            margin:20px 1.65%;
+            width: fit-content;
+            max-width: 44%;
+            margin:20px 3%;
         }
         .footer-list h6{
             font-size: 15px;
+            &::before{
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
-        .links a{
+        .links a{ font-size: 14px; }
+    }
+    
+    .shared-footer .third-row{
+        flex-wrap: wrap;
+        .p{
             font-size: 14px;
-            margin: 7.5px 0;
+            width: 100%;
+            margin: 15px 0;
+        }
+        .right-side{ width: 100%; }
+        .select-language, .mode-switcher-container{
+            margin:10px;
         }
     }
-
-    .sub{
-        padding: 15px 30px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .all-footer-links{
+    
+    .shared-footer .last-row{
         justify-content: center;
-        .footer-list{
-            width: 46%;
-            max-width: 46%;
+        flex-wrap: wrap;
+        .buttons{
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin:10px 0;
+        }
+        .buttons button{
+            margin: 10px;
+            small{ font-size: 10px; }
+            h5{font-size: 14px; }
+        }
+        .icon{ height: 22.5px; }
+        .center-links{
+            width: 100%;
+            margin:10px 0;
+        }
+        .center-links a{
+            font-size: 14px;
+            margin:7.5px;
+        }
+        .center-links span{
+           display: none;
+        }
+        .social-medias{
+            width: 100%;
+            margin:10px;
+        }
+        .social-medias a{
+            font-size: 22.5px;
+            margin: 10px;
         }
     }
 }

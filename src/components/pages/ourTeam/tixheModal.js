@@ -19,19 +19,25 @@ function ModalAnesa() {
       <Modal show={show} onHide={handleClose} className="modal">
         <Modal.Header closeButton>
           <div className="alldiv">
-            <div className="divBorder"></div>
-            <Button variant="secondary" className="xbtn" onClick={handleClose}>
-              X
-            </Button>
-            <img src={imgProfile} className="pic" />
-            <div className="modalNames">
-              <Modal.Title className="name">Hatixhe Piraj</Modal.Title>
-              <Modal.Title className="name2">Admin</Modal.Title>
-            </div>
-            <Modal.Body className="skills">.skills</Modal.Body>
-            <div className="divSkills">
-              <Modal.Body className="skills01">#admin</Modal.Body>
-              <Modal.Body className="skills01">#friendly</Modal.Body>
+            <div className="divModal11"></div>
+            <div className="alldi2v">
+              <Button
+                variant="secondary"
+                className="xbtn"
+                onClick={handleClose}
+              >
+                X
+              </Button>
+              <img src={imgProfile} className="pic" />
+              <div className="modalNames">
+                <Modal.Title className="name">Hatixhe Piraj</Modal.Title>
+                <Modal.Title className="name2">Admin</Modal.Title>
+              </div>
+              <Modal.Body className="skills">.skills</Modal.Body>
+              <div className="divSkills">
+                <Modal.Body className="skills01">#admin</Modal.Body>
+                <Modal.Body className="skills01">#friendly</Modal.Body>
+              </div>
             </div>
           </div>
         </Modal.Header>

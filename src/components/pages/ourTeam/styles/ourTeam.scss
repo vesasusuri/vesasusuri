@@ -1,10 +1,7 @@
-h1{
-  color: white;
-}
+// * {
+//   font-family: "Red Hat Mono", monospace;
+// }
 
-p{
-  color: white;
-}
 //do25f1
 .digitalSchoolTeachersTeam {
   font-size: 30px;
@@ -12,87 +9,161 @@ p{
   padding: 40px 0 0 0;
 }
 .OurTeam {
-  margin: 5% 0;
-  padding: 0 12.5%;
+  padding: 8%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.ourTeamInsideDiv {
+  width: 400px;
+  height: 352px;
+  background-color: #1f1f1f;
+  border-radius: 25px;
+  border-top: 7px solid #ff1ce8;
+  border-right: 7px solid #ff1ce8;
+  margin-bottom: 40px;
+  &:hover {
+    border: 1px solid #ff1ce8;
+    transition: 300ms all ease;
+    .buttonclose {
+      display: flex;
+    }
+  }
+  .colorpink {
+    color: #ff1ce8;
+  }
+}
+.ourTeamInsideDiv .pic {
+  width: 100%;
+}
+.ourTeamInsideDiv .info {
+  padding: max(17.5px, 1.5vw);
+}
+.ourTeamInsideDiv .info h6 {
+  display: flex;
+  position: relative;
+  top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.ourTeamInsideDiv .info p {
+  display: flex;
+  position: relative;
+  top: -17px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16.5px;
+  color: #ffffff;
+}
+.comment {
+  font-size: max(13px, 0.85vw);
+  margin-bottom: max(3px, 0.2vw);
+  color: white;
+}
+
+.top span {
+  font-size: max(11px, 0.75vw);
+  font-style: italic;
+}
+button {
+  background-color: transparent;
+  border: none;
+  opacity: 90%;
+}
+.buttonclose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  background: #ff1ce8;
+  color: #fff;
+  font-size: max(14px, 0.85vw);
+  padding: 11px 11px;
+  border-radius: 100vmax;
+  min-width: max(7vw, 110px);
+  svg {
+    font-size: max(17.5px, 1.1vw);
+    margin-left: max(7.5px, 0.5vw);
+  }
+  &:hover {
+    animation: pulse-white 0.7s ease-in-out;
+    -webkit-animation: pulse-white 0.7s ease-in-out;
+  }
+  display: none;
+}
+.profile {
+  height: 192px;
+  width: 290px;
+  border-radius: 25px;
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 55px;
+
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
   .ourTeamInsideDiv {
-    width: 28.5%;
-    border: 1px solid violet;
-    border-radius: max(10px, 1vw);
-    margin: max(20px, 1.75vw) 0;
+    width: 290px;
+    margin: 12px;
+    margin-bottom: 2%;
   }
-  .ourTeamInsideDiv .info {
-    padding: max(17.5px, 1.5vw);
-  }
-  .ourTeamInsideDiv .info h6 {
-    display: block;
-    font-size: 1em;
-    color: white;
-    margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-  }
-
-  .ourTeamInsideDiv .info p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: violet;
-  }
-  .comment {
-    font-size: max(13px, 0.85vw);
-    margin-bottom: max(3px, 0.2vw);
-    color: white;
-  }
-
-  .top span {
-    font-size: max(11px, 0.75vw);
-    font-style: italic;
-  }
-
-  .button {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .top {
-    display: none;
-  }
-  .readmoreBtn {
-    position: relative;
-    top: -100px;
-    left: 150px;
-    width: 100px;
-    height: 30px;
-    background-color: violet;
-    color: white;
-  }
-  .profile {
-    width: 100%;
-    border-radius: max(10px, 1vw);
+  .ourTeamInsideDiv {
+    width: 950px;
   }
 }
 
-@media (max-width: 767px) {
-  .OurTeam {
-    margin: 20px 0;
-    padding: 0 8.5%;
-    .ourTeamInsideDiv {
-      width: 47.5%;
-      padding: 15px 20px;
-      margin: 10px 0;
-    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .ourTeamInsideDiv {
+    width: 355px;
+    margin: 15px;
+    margin-bottom: 2%;
+  }
+  .ourTeamInsideDiv {
+    width: 785px;
   }
 }
-@media (max-width: 475px) {
-  .OurTeam {
-    .ourTeamInsideDiv {
-      width: 100%;
-    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .ourTeamInsideDiv {
+    width: 600px;
+    margin: 14px;
+    margin-bottom: 2%;
+  }
+  .ourTeamInsideDiv {
+    width: 600px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .ourTeamInsideDiv {
+    width: 450px;
+    margin: 14px;
+    margin-bottom: 2%;
+  }
+  .ourTeamInsideDiv {
+    width: 450px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+  .ourTeamInsideDiv {
+    width: 380px;
+    margin-bottom: 2%;
+  }
+  .ourTeamInsideDiv {
+    width: 380px;
   }
 }

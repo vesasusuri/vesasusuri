@@ -11,6 +11,12 @@ function Banner2() {
             defaultMessage=".programming() for ages 8-18 years"
           />
         </h1>
+        <p>
+        <FormattedMessage
+            id="home-next-level-text"
+            defaultMessage="Let us give you an opportunity to learn and to get an internship at Digi Lab"
+          />
+        </p>
       </div>
     </div>
   );

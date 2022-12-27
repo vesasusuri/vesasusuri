@@ -1,0 +1,92 @@
+.shared-subscribe{
+    margin-top: max(50px, 5%);
+    padding: max(40px, 3.5vw) 7.5%;
+    color:#fff;
+    background: linear-gradient(rgba(27, 0, 43, 0.725), rgba(27, 0, 43, 0.725)), url('../../../assets/shared/4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: max(20px, 3vw) max(20px, 3vw) 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .block{
+        width: fit-content;
+        max-width: 45%;
+    }
+    h1{
+        font-size: max(22.5px, 1.5vw);
+        font-weight: 500;
+    }
+    p{
+        font-size: max(14px, 0.85vw);
+        margin-top: max(10px, 0.85vw);
+    }
+    form{
+        width: 42.5%;
+        border:1px solid #fff;
+        display: flex;
+        padding: max(2px, 0.2vw);
+        border-radius: 100vmax;
+    }
+    .input{
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+    span{
+        font-size: max(17.5px, 1.2vw);
+        margin:0 max(3px, 0.2vw) 0 max(15px, 1.25vw)
+    }
+    input{
+        flex: 1;
+        height: max(37.5px, 2.5vw);
+        padding-left:max(3px, 0.2vw);
+        font-size: max(12px, 0.8vw);
+        background: none;
+        color:#fff;
+        margin-right: max(3px, 0.35vw);
+        border:0;
+        &::placeholder{
+            color:#fff;
+        }
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-text-fill-color:#fff !important;
+        -webkit-background-color: black !important;
+    }
+    button{
+        color:#fff;
+        border:0;
+        border-radius: 100vmax;
+        background: var(--main-color);
+        font-size: max(13.5px, 0.85vw);
+        padding: max(5px, 0.35vw) max(15px, 1.5vw);
+    }
+}
+
+@media(max-width:1000px){
+    .shared-subscribe{
+        padding: 45px 3.5% 40px;
+    flex-direction: column;
+        background-attachment: unset;
+        border-radius: 15px 15px 0 0;
+        .block{
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+            padding:0 3.5%;
+        }
+        form{
+            width: 400px;
+            max-width: 100%;
+            margin:30px auto 0;
+        }
+    }
+}

@@ -79,7 +79,7 @@ const OurTeamData =[
     {
         img:man,
         emri:<FormattedMessage id="arianit" defaultMessage="Vesa Susuri"/>,
-        role:<FormattedMessage id="role" defaultMessage="Full Stack Developer / UI x UX Designer"/>,
+        role:<FormattedMessage id="role" defaultMessage="Full Stack Developer"/>,
         closeBTN:<Link><ModalVesa/></Link>
     },
     {

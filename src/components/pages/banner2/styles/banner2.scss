@@ -1,7 +1,7 @@
 .next-level-component{
     margin: max(50px, 5%) 7.5%;
     padding:max(40px, 8%) 10%;
-    background: url('../../../../assets/home/banner2.png');
+    background: url('../../../../assets/home/banner1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -9,37 +9,26 @@
     color:#fff;
     position: relative;
     text-align: center;
-    clip-path: polygon(0 0, 92.5% 0, 100% 20%, 100% 100%, 7.5% 100%, 0 80%);
+    // border: 3px solid rgba(255, 255, 255, 0.626) ;
+    border-radius: 13px;
     .link-container{
         display: flex;
         justify-content: center;
     }
     h1{
-        font-size: max(25px, 2vw);
-        font-weight: 500;
-        color: #fff;
-        font-size: 45px;
-        text-shadow: 0px 1px 1px #ddd, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #cbcbcb, 0px 5px 1px #cbcbcb, 0px 5px 1px #cbcbcb, 0px 5px 1px #cbcbcb, 0px 5px 1px #cbcbcb, 0px 8px 5px rgba(0,0,0,.6);
-        text-align: center;
+        font-size: max(28px, 3vw);
+        font-weight: 900;
+        position: relative;
+        // text-shadow: 4px 3px 0px rgb(144,109,248), 9px 8px 0px rgba(0,0,0,0.15)
+        font-family: 'Red Hat Mono', monospace;    
+        text-shadow: 4px 3px 0px rgb(76, 57, 129), 9px 8px 0px rgba(0,0,0,0.15)
+    }
+    p{
+        padding-top: 30px;  
+        font-weight: 600;
+        font-family: 'Red Hat Mono', monospace; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media(max-width:1000px){
     .home-page .next-level-component{
@@ -48,8 +37,4 @@
         padding: 40px 7.5%;
         p{ width: 100%; }
     }
-}
-
-.programming-banner2{
-    visibility: hidden;
 }

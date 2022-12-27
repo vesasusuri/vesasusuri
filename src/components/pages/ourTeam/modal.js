@@ -16,10 +16,13 @@ function SpringModal() {
       </Button>
 
       <Modal show={show} onHide={handleClose} className="modal">
+        
         <Modal.Header closeButton>
+          
           <div className="alldiv">
-            <div className="divBorder"></div>
-            <Button variant="secondary" className="xbtn" onClick={handleClose}>
+          <div className="divModal11"></div>           
+          <div className="alldi2v">
+           <Button variant="secondary" className="xbtn" onClick={handleClose}>
               X
             </Button>
             <img src={imgProfile} className="pic" />
@@ -38,6 +41,7 @@ function SpringModal() {
               <Modal.Body className="skills01">#leader</Modal.Body>
               <Modal.Body className="skills01">#php</Modal.Body>
             </div>
+          </div>
           </div>
         </Modal.Header>
       </Modal>

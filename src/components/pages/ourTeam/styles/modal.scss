@@ -1,4 +1,3 @@
-
 .modal{
     position: fixed;
     top: 0;
@@ -18,8 +17,19 @@
         left:25%;
         animation: fadeIn 1s 1;
     }
+    .alldi2v{
+        margin-top: -250px;
+        margin-left: 20px;
+    }
+    .divModal11{
+        width: 500px;
+        height: 150px;
+        margin-left: 200px;
+        margin-top: 80px;
+        border-radius: 23px;
+        border: 1px solid white;
+    }
 
-    
     @keyframes fadeIn {
         0% {transform: translate3d(0, -100%, 0);opacity: 0}
         40% {opacity: 0.4}
@@ -49,8 +59,8 @@
     .modalNames{
         margin-left: 43%;
         margin-top: -21%;
-        display: flex;
-        justify-content: space-around;
+        // display: flex;
+        // justify-content: space-around;
     }
     .pic{
         width: 40%;
@@ -84,6 +94,7 @@
         margin-left: 3%;
         margin-top: 3%;
     }
-}    .btnRead{
-    background-color: black;
+}
+Button{
+    color: black;
 }

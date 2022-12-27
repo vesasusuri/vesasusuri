@@ -1,127 +1,150 @@
-.rec.rec-dot{
-    display: none;
-}
-
 .rec.rec-arrow {
-color: white;
+  color: white;
 }
-.professional-certificates{
-    margin: max(55px, 7.5%) 0;
-    padding:0 5%;
-    .summerSchool{
-        color: rgb(197, 28, 197);
-        text-align: center;
-        font-size: max(24px,0.7vw);
-        font-family: 'Red Hat Mono';
-    }
-    .inline{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: max(20px, 1.5vw);
-        padding:0 4%;
-    }
-    h1{
-        font-size: max(17.5px, 1.1vw);
-        font-weight: 500;
-        margin:0 max(25px, 2vw) max(7.5px, 0.5vw) 0;
-    }
-    .hover-button2{
-        margin: max(7.5px, 0.5vw) 0;
-    }
-    .item{
-        width: 98%;
-        display: flex;
-        flex-direction: column;
-        padding: max(5px, 0.4vw);
-        position: relative;
-        margin-bottom: max(20px, 1.75vw);
-        &:hover {
-            .square{ opacity: 0.5; }
-            .square1{ right:50%; }
-            .square2{ left:50%; }
-        }
-    }
-    .main{
-        flex: 1;
-        background: var(--dark-bg);
-        padding: max(15px, 2vw);
-        border:1px solid var(--dark-border);
-        border-radius: max(10px, 0.8vw);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        z-index: 2;
-    }
-    .icon{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: max(17.5px, 1.1vw);
-        color:white;
-    }
-    .top p{
-        font-size: max(15px, 0.9vw);
-        margin-top: max(7.5px, 0.5vw);
-        color:white;
-    }
-    h6{
-        font-size: max(17.5px, 1.25vw);
-        margin: max(20px, 1.75vw) 0;
-        color:white;
+.professional-certificates {
+  margin: max(55px, 7.5%) 0;
+  padding: 0 5%;
+  .summerSchool {
+    color: #ececec;
+    font-weight: 900;
+    position: absolute;
+    font-size: 20px;
+    top: 80px;
+    left: 70px;
+    font-family: "Red Hat Mono", monospace;
+    text-shadow: 8px 0px 19px rgba(0, 0, 0, 0.888);
+  }
+  .changecolor {
+    color: violet;
+    font-size: 30px;
+  }
 
+  .bgimgg {
+    position: relative;
+    .imagepicc {
+      width: 200px;
+      transform: rotate(90deg);
     }
-    .months{
-        font-size: max(15px, 0.9vw);
-        color:#828282;
+    .imagepicc:hover {
+      transform: rotate(180deg);
+      transition: 2s all ease-in-out;
     }
-    .square{
-        background: var(--main-color);
-        opacity: 0;
-        width: 50%;
-        padding-top: 50%;
-        position: absolute;
-        border-radius: max(10px, 0.8vw);
-        transition: 0.35s ease-in-out;
-        -webkit-transition: 0.35s ease-in-out;
+  }
+  .inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: max(20px, 1.5vw);
+    padding: 0 4%;
+  }
+  h1 {
+    font-size: max(17.5px, 1.1vw);
+    font-weight: 500;
+    margin: 0 max(25px, 2vw) max(7.5px, 0.5vw) 0;
+  }
+  .hover-button2 {
+    margin: max(7.5px, 0.5vw) 0;
+  }
+  .item {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    padding: max(5px, 0.4vw);
+    position: relative;
+    margin-bottom: max(20px, 1.75vw);
+    &:hover {
+      .square {
+        opacity: 0.5;
+      }
+      .square1 {
+        right: 50%;
+      }
+      .square2 {
+        left: 50%;
+      }
     }
-    .square1{
-        top:0;
-        right:0;
-    }
-    .square2{
-        bottom:0;
-        left:0;
-    }
+  }
+  .main {
+    flex: 1;
+    background: var(--dark-bg);
+    padding: max(15px, 2vw);
+    border: 1px solid var(--dark-border);
+    border-radius: max(10px, 0.8vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #363844;
+    position: relative;
+    z-index: 2;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: max(17.5px, 1.1vw);
+    color: white;
+  }
+  .top p {
+    font-size: max(15px, 0.9vw);
+    margin-top: max(7.5px, 0.5vw);
+    color: white;
+  }
+  h6 {
+    font-size: max(17.5px, 1.25vw);
+    margin: max(20px, 1.75vw) 0;
+    color: white;
+  }
+  .months {
+    font-size: max(15px, 0.9vw);
+    color: #828282;
+  }
+  .square {
+    background: var(--main-color);
+    opacity: 0;
+    width: 50%;
+    padding-top: 50%;
+    position: absolute;
+    border-radius: max(10px, 0.8vw);
+    transition: 0.35s ease-in-out;
+    -webkit-transition: 0.35s ease-in-out;
+  }
+  .square1 {
+    top: 0;
+    right: 0;
+  }
+  .square2 {
+    bottom: 0;
+    left: 0;
+  }
 }
 
-@media(max-width:768px){
-    .home-page .professional-certificates{
-        padding:0 2.5%;
-        .inline{
-            justify-content: center;
-            text-align: center;
-        }
-        h1{
-            width: 100%;
-            margin:10px;
-        }
-        .hover-button2{
-            margin:5px 0 0;
-        }
-        .rec-pagination{
-            display: none !important;
-        }
+@media (max-width: 768px) {
+  .home-page .professional-certificates {
+    padding: 0 2.5%;
+    .inline {
+      justify-content: center;
+      text-align: center;
     }
+    h1 {
+      width: 100%;
+      margin: 10px;
+    }
+    .hover-button2 {
+      margin: 5px 0 0;
+    }
+    .rec-pagination {
+      display: none !important;
+    }
+  }
 }
 
-body.dark-mode .home-page .professional-certificates{
-    .icon, .top p{
-        color: #B2B2B2;
-    }
-    .months{
-        color:#E2E2E2;
-    }
+body.dark-mode .home-page .professional-certificates {
+  .icon,
+  .top p {
+    color: #b2b2b2;
+  }
+  .months {
+    color: #e2e2e2;
+  }
 }

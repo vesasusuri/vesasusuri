@@ -2,7 +2,7 @@
     position: absolute;
 }
 .navbar .mobile-sidebar{
-    background-color: white;
+    background-color: #22102E;
     position: fixed;
     top:0;
     left:0;
@@ -19,12 +19,14 @@
 .mobile-sidebar .sidebar-logo-row{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 1px solid #bbb;
     padding: 22.5px 20px 17.5px;
     a{
         display: flex;
         align-items: center;
+        color: white;
+        font-size: 20px;
     }
     .shared-logo{
         height:35px;
@@ -34,7 +36,7 @@
         background: none;
         font-size: 35px;
         margin-bottom: -7.5px;
-        color:#222;
+        color:#eee;
         cursor: pointer;
     }
 }
@@ -75,14 +77,15 @@
         display: flex;
         justify-content: space-between;
         padding:16px 20px 15px;
-        border-bottom: 1px solid #bbb;
+        border-bottom: 1px solid #eee;
         border-left: 4px solid transparent;
         a{
             font-size: 16.5px;
             width:160px;
             display: flex;
             align-items: center;
-            color:#444;
+            color:#eee;
+            font-family: "Red Hat Mono", monospace;
             svg{
                 font-size: 20px;
                 margin-right: 10px;
@@ -113,7 +116,7 @@
     a{
         padding:10px 10px 10px 55px;
         border-bottom: 1px solid #bbb;
-        color:#555;
+        color:#eee;
         font-size: 15px;
         width: 100%;
         display: flex;
@@ -146,6 +149,7 @@
         color:#fff !important;
         display: flex;
         justify-content: center;
+        font-family: "Red Hat Mono", monospace;
     }
 }
 

@@ -6,20 +6,23 @@ import Banner2 from "../../components/pages/banner2/banner2";
 import Carousel3 from "../../components/shared/Carusel3/Carousel3";
 import Carousel4 from "../../components/shared/Carusel4/Carusel4";
 import Korikula from "../../components/shared/Korikula/Korikula";
-import Code from "../../components/pages/codeBanner/code";
+import Ide from "../../components/shared/ideTheme/ide";
+import Subscribe from "../../components/shared/Subscribe/Subscribe";
+import "./home.scss"
 function Home() {
     return(
-       <>
+       <div className="divPalidhje">
         <Nav/>
         <Banner1/>
-        <Carousel1/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <Banner2/>
         <Carousel3/>
+        <Carousel1/>
         <Carousel4/>
         <Korikula/>
+        <Ide/>
+        <Subscribe/>
         <Footer/>
-       </>
+       </div>
     )
 }
 

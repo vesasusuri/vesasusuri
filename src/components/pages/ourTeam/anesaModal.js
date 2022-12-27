@@ -18,8 +18,9 @@ function ModalAnesa() {
 
       <Modal show={show} onHide={handleClose} className="modal">
         <Modal.Header closeButton>
-          <div className="alldiv">
-            <div className="divBorder"></div>
+        <div className="alldiv">
+          <div className="divModal11"></div>           
+          <div className="alldi2v">
             <Button variant="secondary" className="xbtn" onClick={handleClose}>
               X
             </Button>
@@ -33,7 +34,7 @@ function ModalAnesa() {
               <Modal.Body className="skills01">#admin</Modal.Body>
               <Modal.Body className="skills01">#friendly</Modal.Body>
             </div>
-          </div>
+          </div></div>
         </Modal.Header>
       </Modal>
     </>

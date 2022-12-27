@@ -1,22 +1,9 @@
 .bannerOurTeam-background {
   width: 100%;
   height: 25rem;
-  background: linear-gradient(238.72deg, #9086ff 0%, #000000 100%),
-    linear-gradient(301.28deg, #ff0000 0%, #20002c 100%),
-    linear-gradient(121.28deg, #207a00 0%, #950000 100%),
-    linear-gradient(238.72deg, #00d1ff 0%, #000000 100%),
-    linear-gradient(238.72deg, #00d1ff 0%, #a80000 100%),
-    linear-gradient(58.72deg, #b80000 0%, #1b00c2 100%),
-    linear-gradient(125.95deg, #00e0ff 10.95%, #87009d 100%),
-    linear-gradient(263.7deg, #b60000 3.43%, #b100a0 96.57%),
-    linear-gradient(320.54deg, #800000 0%, #00c2ff 72.37%),
-    linear-gradient(130.22deg, #b9c900 18.02%, #8f73ff 100%);
-  background-blend-mode: color-dodge, difference, color-dodge, difference,
-    lighten, difference, color-dodge, difference, difference, normal;
+  background-image: url('../../../../assets/shared/gradient.jpg');
   position: relative;
-  @media only screen and (max-width: 768px) {
-    clip-path: polygon(100% 0, 100% 50%, 100% 55%, 0% 100%, 0 53%, 0% 0%);
-  }
+  
 }
 
 .ourteamTitle {
@@ -30,14 +17,4 @@
   font-weight: 900;
 }
 
-.lineOnOurtTeam {
-  width: max(60%, 8vw);
-  position: absolute;
-  z-index: 10;
-  height: 7px;
-  background-color: #a10037;
-  display: flex;
-  margin-left: 300px;
- margin-top: 200px;
-  opacity: 50%;
-}
+

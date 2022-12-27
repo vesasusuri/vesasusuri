@@ -1,3 +1,73 @@
+.successStories {
+    color: #ececec;
+    font-weight: 900;
+    position: absolute;
+    font-size: 20px;
+    top: 80px;
+    left: 170px;
+    font-family: "Red Hat Mono", monospace;
+    text-shadow: 8px 0px 19px rgba(0, 0, 0, 0.888);
+    .changecolor {
+      color: violet;
+      font-size: 30x;
+    }
+  }
+  .bgimgSuccesStories {
+    position: relative;
+    @media(max-width:895px){
+        margin-left: 200px;
+        transition: 1s all ease;
+    }
+    @media(max-width:800px){
+        margin-left: 140px;
+        transition: 1s all ease;
+    }
+    @media(max-width:714px){
+        margin-left: 100px;
+        transition: 1s all ease;
+    }
+    @media(max-width:648px){
+        margin-left: 60px;
+        transition: 1s all ease;
+    }
+    @media(max-width:575px){
+        margin-left: 30px;
+        transition: 1s all ease;
+    }
+    @media(max-width:503px){
+        margin-left: 0px;
+        transition: 1s all ease;
+    }
+    @media(max-width:471px){
+        margin-left: -30px;
+        transition: 1s all ease;
+    }
+    @media(max-width:430px){
+        margin-left: -50px;
+        transition: 1s all ease;
+    }
+    @media(max-width:380px){
+        margin-left: -80px;
+        transition: 1s all ease;
+    }
+    @media(max-width:335px){
+        margin-left: -100px;
+        transition: 1s all ease;
+    }
+    .imagepicSuccesStories {
+      max-width: 200px;
+      position: relative;
+      left: 120px;
+      transform: rotate(360deg);
+    }
+    .imagepicSuccesStories:hover {
+      transform: rotate(600deg);
+      transition: 2s all ease-in-out;
+    }
+}
+p{
+    color: white;
+}
 .shared-testimonials-slider{
     margin: max(50px, 5%) 10%;
     position: relative;
@@ -8,7 +78,8 @@
         top:0;
         left:max(15px, 1.1vw);
         right:max(15px, 1.1vw);
-        background: #2D1137;
+        background: #363844;
+        // background: url('../../../../assets/home/footer.jpg');
         border-radius: max(10px, 2vw);
     }
     .rec-pagination{ display:none; }
@@ -22,6 +93,7 @@
     .rec-arrow-right{
         background: var(--main-color) !important;
         color: #fff !important;
+        
     }
     .item{
         width: 100%;       
@@ -32,7 +104,7 @@
         justify-content: space-between;
         padding: 0 1%;
     }
-    .img-container{
+    .img-container2{
         width: 30%;
         position: relative;
         &::before{
@@ -47,7 +119,8 @@
         }
     }
     .profile{
-        width: 100%;
+        width: 70%;
+        height: 70%;
         position: relative;
         z-index: 3;
     }
@@ -104,7 +177,7 @@
             display: block;
             padding: 20px 15px;
         }
-        .img-container{
+        .img-container2{
             width: 75%;
             margin: 0 auto;
         }

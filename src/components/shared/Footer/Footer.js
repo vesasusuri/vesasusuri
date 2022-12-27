@@ -1,81 +1,64 @@
-import React, { useState } from 'react';
-import { BiEnvelope } from 'react-icons/bi';
-import { FormattedMessage } from 'react-intl';
-import SelectLanguage from '../SelectLanguage/SelectLanguage';
 import './styles/footer.scss'
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
-
+import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
+import { Link } from 'react-router-dom';
+import { FooterData } from './data'
+import SelectLanguage from '../SelectLanguage/SelectLanguage';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const Footer = (props) => {
-
-    const [email, setEmail] = useState('');
-    const [mode, setMode] = useState(() => localStorage.getItem("mode"));
-
-    const [settings, setSettings] = useState(false);
-    const showSettings = () => {
-        setSettings(!settings);
-    }
-
-
     return(
         <div className='shared-footer'>
-            <div className='shared-footer1'>
-            <div className="shared-white-logo"></div>
-            <p className='p2'>Follow us:</p>
+            <div className='all-footer-links'>
+                {FooterData.map((props) => {
+                    return(
+                        <div className="footer-list" key={props.id}>
+                            <h6>{props.category}</h6>
+                            <div className="links">
+                                {props.links.map((l) => {
+                                    return (
+                                        <Link key={l.to} to={l.to} className="footer-item">
+                                            {l.link}
+                                        </Link>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
-            <div className="first-row">
-                
-                <div className="left">
-                                   
+
+            <div className="third-row">
+                <div className="p">© 2022 - Digilab-pz</div>
+                <div className="right-side">
+                    <SelectLanguage
+                        setLanguage={props.setLanguage}
+                        language={props.language}
+                    />
                 </div>
-                <div className="buttons">
-                 
-                </div> 
-                <div className="left">
+            </div>
+
+            <div className="last-row">
+                <div className="center-links">
+                    <Link to='/'>
+                        <FormattedMessage id='privacy-policy' defaultMessage='Privacy Policy' />
+                    </Link>
+                    <span>&nbsp; - &nbsp;</span>
+                    <Link to='/'>    
+                        <FormattedMessage id='terms-&-conditions' defaultMessage='Terms & Conditions' />
+                    </Link>
+                    <span>&nbsp; - &nbsp;</span>
+                    <Link to='/'>    
+                        <FormattedMessage id='cookies-policy' defaultMessage='Cookies Policy' />
+                    </Link>
+                </div>
+
+                <div className="social-medias">
                     <a href='#'><FaFacebookF /></a>
                     <a href='#'><FaInstagram /></a>
                     <a href='#'><FaTwitter /></a>
                     <a href='#'><FaLinkedinIn /></a>
-                </div>
-            </div>
-            
-             <div className="second-row">
-                    <p className="sub">
-                        <FormattedMessage id='subscribe-to-our-newsletter' 
-                        defaultMessage='Subscribe to our newsletter' />
-                    </p>
-                <div className="email-container">
-                  
-                    <form action=''>
-                        <span><BiEnvelope /></span>
-                        <input type="email" 
-                            value={email}
-                            name='email'
-                            id='email'
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder='Enter your email address'
-                        />
-                        <button type='submit'>
-                            <FormattedMessage id='Subscribe' defaultMessage='Subscribe' />
-                        </button>
-                    </form>
-                </div>
-            </div> 
-
-            <div className="third-row">
-                <p className='p2'>
-                    <FormattedMessage id='footer-p2' 
-                    defaultMessage='© 2022 Digi Lab. All rights reserved.' />
-                </p>
-                
-             
-
-                <div className="right">
-                     <SelectLanguage
-                        setLanguage={props.setLanguage}
-                        language={props.language}
-                    />
-
+                    <a href='#'><FaYoutube /></a>
                 </div>
             </div>
 

@@ -6,6 +6,8 @@ import { FormattedMessage } from 'react-intl'
 import Carousel from 'react-elastic-carousel'
 import { Data4 } from './data'
 import { FaAward } from 'react-icons/fa'
+import pic from "../../../assets/home/landing.png";
+
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -29,7 +31,12 @@ const Carousel3 = () => {
 
     return (
         <div className='professional-certificates'>
-          <h1 className='summerSchool'>.summerSchool()</h1>
+          <div className="bgimgg">
+            <div className="textinimgg">
+            <img src={pic} className="imagepicc"/>
+                <p class="summerSchool"><span className="changecolor">.</span>summerSchool<span className="changecolor">()</span></p>
+            </div>
+            </div>
           <br></br> <br></br>
             <Carousel className="slider" 
                 breakPoints={breakPoints} 

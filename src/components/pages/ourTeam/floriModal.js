@@ -17,8 +17,9 @@ function ModalFlori() {
 
       <Modal show={show} onHide={handleClose} className="modal">
         <Modal.Header closeButton>
-          <div className="alldiv">
-            <div className="divBorder"></div>
+        <div className="alldiv">
+          <div className="divModal11"></div>           
+          <div className="alldi2v">
             <Button variant="secondary" className="xbtn" onClick={handleClose}>
               X
             </Button>
@@ -36,6 +37,7 @@ function ModalFlori() {
               <Modal.Body className="skills01">#friendly</Modal.Body>
               <Modal.Body className="skills01">#creative</Modal.Body>
               <Modal.Body className="skills01">#coding</Modal.Body>
+            </div>          
             </div>
           </div>
         </Modal.Header>

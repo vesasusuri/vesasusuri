@@ -18,8 +18,9 @@ function ModalLendriti() {
 
       <Modal show={show} onHide={handleClose} className="modal">
         <Modal.Header closeButton>
-          <div className="alldiv">
-            <div className="divBorder"></div>
+        <div className="alldiv">
+          <div className="divModal11"></div>           
+          <div className="alldi2v">
             <Button variant="secondary" className="xbtn" onClick={handleClose}>
               X
             </Button>
@@ -37,6 +38,7 @@ function ModalLendriti() {
               <Modal.Body className="skills01">#webDevelopment</Modal.Body>
               <Modal.Body className="skills01">#jQuery</Modal.Body>
             </div>
+          </div>          
           </div>
         </Modal.Header>
       </Modal>

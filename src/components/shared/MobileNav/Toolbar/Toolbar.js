@@ -29,10 +29,10 @@ const Toolbar = (props) => {
             <div className='mobile-logo-row'>
                 <Link to='/'>
                     <div className='shared-logo'></div>
-                    <h1>Pay2Gate</h1>
+                    <h1>Digi Lab</h1>
                 </Link>
             </div>
-            <button onClick={props.drawerClickHandler}><AiOutlineMenu/>c</button>
+            <button onClick={props.drawerClickHandler}><AiOutlineMenu/></button>
         </div>
     )
 }
