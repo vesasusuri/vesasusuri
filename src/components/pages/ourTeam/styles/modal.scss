@@ -22,12 +22,17 @@
         margin-left: 20px;
     }
     .divModal11{
-        width: 500px;
+        max-width: 500px;
         height: 150px;
         margin-left: 200px;
         margin-top: 80px;
         border-radius: 23px;
         border: 1px solid white;
+        @media (max-width:1350px){
+            margin-left: 100px;
+            margin-top: 50px;
+            max-width: 400px;
+        }
     }
 
     @keyframes fadeIn {
@@ -46,6 +51,9 @@
         font-size: 18px;
         font-weight: 400;
         animation: fade 1s 1;
+        @media (max-width:1350px){
+         font-size: max(14px,0.6vw);
+        }
     }
     .name:hover{
         text-shadow: 0px 0px 5px rgba(black, .9);
@@ -55,12 +63,15 @@
         color: violet;
         font-size: 18px;
         font-weight: 400;
+        padding-top: 10px;
+        @media (max-width:1350px){
+            font-size: max(12px,0.4vw);
+
+           }
     }
     .modalNames{
         margin-left: 43%;
         margin-top: -21%;
-        // display: flex;
-        // justify-content: space-around;
     }
     .pic{
         width: 40%;
@@ -68,6 +79,9 @@
         margin-top: 70px;
         border-radius: max(10px,1vw);
         animation: fade 1s 1;
+        @media (max-width:1350px){
+            margin-top: 94px;
+        }
     }
     .xbtn{
         background-color: transparent;
@@ -77,16 +91,15 @@
         left: 700px;
         animation: fade 1s 1;
     }
-
     .skills{
         color: white;
         margin-top: 19%;
         margin-left: 3%;
         animation: fade 1s 1;
     }
-
     .divSkills{
         display: flex;
+        flex-wrap: wrap;
         animation: fade 1s 1;
     }
     .skills01{
@@ -94,7 +107,4 @@
         margin-left: 3%;
         margin-top: 3%;
     }
-}
-Button{
-    color: black;
 }

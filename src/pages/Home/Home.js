@@ -8,7 +8,9 @@ import Carousel4 from "../../components/shared/Carusel4/Carusel4";
 import Korikula from "../../components/shared/Korikula/Korikula";
 import Ide from "../../components/shared/ideTheme/ide";
 import Subscribe from "../../components/shared/Subscribe/Subscribe";
+
 import "./home.scss"
+import Statistikat from "../../components/pages/statistikat/statistikat";
 function Home() {
     return(
        <div className="divPalidhje">
@@ -17,7 +19,8 @@ function Home() {
         <Banner2/>
         <Carousel3/>
         <Carousel1/>
-        <Carousel4/>
+        {/* <Carousel4/> */}
+        <Statistikat/>
         <Korikula/>
         <Ide/>
         <Subscribe/>

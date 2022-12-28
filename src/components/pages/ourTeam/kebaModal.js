@@ -24,10 +24,8 @@ function ModalKeba() {
               X
             </Button>
             <img src={imgProfile} className="pic" />
-            <div className="modalNames">
             <Modal.Title className='name'>Kebir Cesko</Modal.Title>              
             <Modal.Title className="name2">Software Engineer</Modal.Title>
-            </div>
             <Modal.Body className="skills">.skills</Modal.Body>
             <div className="divSkills">
               <Modal.Body className="skills01">#ceo</Modal.Body>

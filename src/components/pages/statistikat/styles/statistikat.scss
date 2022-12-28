@@ -1,0 +1,101 @@
+.shared-premium-adNetwork{
+    padding:0 7.5%;
+    margin: max(55px, 7.5%) 0;
+    position: relative;
+    .globe{
+        position: absolute;
+        top:min(-20px, -2vw);
+        right:7.5%;
+        height: calc(100% + max(40px, 4vw));
+        content: url('../../../../assets/shared/1.webp');
+        border-radius: 23px;
+    }
+    .text{
+        width: 40%;
+        margin-bottom: max(35px, 3.5vw);
+        position: relative;
+        z-index: 2;
+    }
+    h1{
+        font-size: max(25px, 2.75vw);
+        margin-bottom: max(10px, 1vw);
+    }
+    .item p{
+        font-size: max(14px, 0.85vw);
+    }
+    .items{
+        position: relative;
+        z-index: 2;
+        width: 90%;
+        padding: max(45px, 4.5vw) 5% max(40px, 4vw);
+        background: linear-gradient(rgba(69, 45, 104, 0.9), rgba(69, 45, 104, 0.9));
+        //, url('../../../assets/shared/bg1.jpg')
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color:#fff;
+        border-radius: max(10px, 1.5vw);
+        margin-bottom: max(20px, 2vw);
+    }
+    .item{
+        width: fit-content;
+        max-width: 18.5%;
+        &:hover h6{
+            animation: hvr-icon-down 0.75s linear;
+            -webkit-animation: hvr-icon-down 0.75s linear;
+        }
+    }
+    h6{
+        font-size: max(35px, 2.75vw);
+        margin-bottom: max(5px, 0.35vw);
+    }
+    .item p{
+        font-size: max(15px, 0.925vw);
+    }
+}
+
+@media(max-width:1150px){
+    .shared-premium-adNetwork{
+        padding:0 5%;
+        .globe{ right:5%; }
+        .text{ width: 45%; }
+        .items{ width: 92.5%; }
+    }
+}
+
+@media(max-width:900px){
+    .shared-premium-adNetwork{
+        .globe{
+            position: relative;
+            top: unset;
+            right: unset;
+            height: unset;
+            width: 350px;
+            max-width: 100%;
+            margin:30px auto;
+        }
+        .text{
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .items{
+            width: 100%;
+            padding: 25px 15px;
+            background-attachment: unset;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .item{
+            width: fit-content;
+            max-width: 100%;
+            padding:0 15px;
+            margin:20px 0;
+            text-align: center;
+        }
+    }
+}
+

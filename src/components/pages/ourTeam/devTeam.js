@@ -1,21 +1,20 @@
 import "./styles/ourTeam.scss";
-import OurTeamData from "./ourTeamData";
 import DevelopersData from "./teamData";
 import lineimg from "../../../assets/home/line1.png";
 
 import { FormattedMessage } from "react-intl";
 
-function OurTeam2() {
+function DevTeam() {
   return (
     <>
       <p className="digitalSchoolTeachersTeam">
         <FormattedMessage
-          id=".digitalSchoolTeachersTeam"
-          defaultMessage=".digitalSchoolTeachersTeam"
+          id=".digitalSchoolDevelopersTeam"
+          defaultMessage=".digitalSchoolDevelopersTeam"
         />
-      </p>{" "}
+      </p>
       <div className="OurTeam">
-        {OurTeamData.map((props) => {
+        {DevelopersData.map((props) => {
           return (
             <div className="ourTeamInsideDiv">
               <div
@@ -37,4 +36,4 @@ function OurTeam2() {
   );
 }
 
-export default OurTeam2;
+export default DevTeam;

@@ -1,15 +1,13 @@
-// * {
-//   font-family: "Red Hat Mono", monospace;
-// }
-
-//do25f1
 .digitalSchoolTeachersTeam {
   font-size: 30px;
   text-align: center;
   padding: 40px 0 0 0;
+  @media (max-width: 451px) {
+    font-size: 17px;
+  }
 }
 .OurTeam {
-  padding: 8%;
+  padding: 3% 8%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -19,22 +17,51 @@
   height: 352px;
   background-color: #1f1f1f;
   border-radius: 25px;
-  border-top: 7px solid #ff1ce8;
-  border-right: 7px solid #ff1ce8;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+  // box-shadow: rgba(240, 46, 170, 0.4) 5px 5px;
+  // border-top: 7px solid #ff1ce8;
+  // border-right: 7px solid #ff1ce8;
   margin-bottom: 40px;
+  @media (max-width: 1000px) {
+    .ourTeamInsideDiv {
+      width: 300px;
+      margin: 12px;
+      margin-bottom: 2%;
+    }
+    .ourTeamInsideDiv {
+      width: 950px;
+    }
+  }
+  @media (max-width: 451px) {
+    max-width: 100%;
+  }
   &:hover {
-    border: 1px solid #ff1ce8;
-    transition: 300ms all ease;
+    box-shadow: none;
+    border: 2px solid #ff1ce8;
+    transition: 700ms all ease;
+    .profile{
+        opacity: 50%;
+    }
     .buttonclose {
       display: flex;
     }
   }
   .colorpink {
     color: #ff1ce8;
+    font-family: "Red Hat Mono", monospace;
+  }
+  .role {
+    @media (max-width: 451px) {
+      padding-top: 20px;
+      font-family: "Red Hat Mono", monospace;
+    }
   }
 }
 .ourTeamInsideDiv .pic {
   width: 100%;
+  @media (max-width: 451px) {
+    padding-top: 20px;
+  }
 }
 .ourTeamInsideDiv .info {
   padding: max(17.5px, 1.5vw);
@@ -104,21 +131,6 @@ button {
   position: relative;
   top: 20px;
   left: 55px;
-
-  &:hover {
-    opacity: 50%;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .ourTeamInsideDiv {
-    width: 290px;
-    margin: 12px;
-    margin-bottom: 2%;
-  }
-  .ourTeamInsideDiv {
-    width: 950px;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -165,5 +177,31 @@ button {
   }
   .ourTeamInsideDiv {
     width: 380px;
+  }
+}
+
+@media (max-width: 482px) {
+  .profile {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 451px) {
+  .profile {
+    margin-left: -26px;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile {
+    max-width: 100%;
+    margin-left: -40px;
+  }
+}
+
+@media (max-width: 389px) {
+  .profile {
+    margin-left: -54px;
+    margin-top: -20px;
   }
 }
