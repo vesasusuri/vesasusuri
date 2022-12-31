@@ -3,7 +3,6 @@ import "./styles/testimonials.scss";
 import Carousel from "react-elastic-carousel";
 import { Data } from "./data";
 import { ImQuotesLeft } from "react-icons/im";
-import { AiFillStar } from "react-icons/ai";
 import pic from "../../../assets/home/landing.png";
 
 const Carousel1 = () => {

@@ -1,12 +1,9 @@
-import { BsArrowRight } from "react-icons/bs";
 import { FormattedMessage } from "react-intl";
-
 import BusinessMenu from "./BusinessMenu";
 import CompanyMenu from "./CompanyMenu";
 import ProductsMenu from "./ProductsMenu";
 import ResourcesMenu from "./ResourcesMenu";
 import SolutionsMenu from "./SolutionsMenu";
-
 import computer2 from "../../../../assets/shared/computer2.png";
 
 export const ResourcesData1 = [
@@ -202,9 +199,7 @@ export const Activities = [
 ];
 export const CompanyData1 = [
   {
-    category: (
-      <FormattedMessage id="Our-activities" defaultMessage="Our activities" />
-    ),
+    category:<FormattedMessage id="Our-activities" defaultMessage="Our activities" />,
     categoryId: "about-us",
     to1: "/",
     links: [
@@ -212,7 +207,7 @@ export const CompanyData1 = [
         id: 1,
         icon: computer2,
         title: <FormattedMessage id="cinema" defaultMessage="Cinema" />,
-        to: "/",
+        to: "/cinema",
       },
       {
         id: 2,
@@ -271,21 +266,19 @@ export const SolutionData1 = [
         id: 1,
         icon: computer2,
         title: <FormattedMessage id="Code-2" defaultMessage="Code " />,
-        to: "/",
+        to: "/code",
       },
       {
         id: 2,
         icon: computer2,
         title: <FormattedMessage id="Scratch" defaultMessage="Scratch" />,
-        to: "/",
+        to: "/scratch",
       },
       {
         id: 3,
         icon: computer2,
-        title: (
-          <FormattedMessage id="Code-4" defaultMessage="Mit App Inventor" />
-        ),
-        to: "/",
+        title: <FormattedMessage id="Mit" defaultMessage="Mit App Inventor" />,
+        to: "/mit",
       },
     ],
   },
@@ -297,33 +290,26 @@ export const SolutionData1 = [
       {
         id: 4,
         icon: computer2,
-        title: (
-          <FormattedMessage
-            id="HTML-&-CSS-&-JS"
-            defaultMessage="HTML & CSS & JS"
-          />
-        ),
-        to: "/",
+        title: <FormattedMessage id="HTML-&-CSS-&-JS" defaultMessage="HTML & CSS & JS" />,
+        to: "/projects",
       },
       {
         id: 5,
         icon: computer2,
         title: <FormattedMessage id="laravel" defaultMessage="Laravel" />,
-        to: "/",
+        to: "/laravel",
       },
       {
         id: 6,
         icon: computer2,
         title: <FormattedMessage id="Wordpress" defaultMessage="Wordpress" />,
-        to: "/",
+        to: "/wordpress",
       },
       {
         id: 7,
         icon: computer2,
-        title: (
-          <FormattedMessage id="Laravel" defaultMessage="React/ Js / Native" />
-        ),
-        to: "/",
+        title:   <FormattedMessage id="react" defaultMessage="React/ Js / Native" />,
+        to: "/react",
       },
       {
         id: 8,
@@ -331,15 +317,13 @@ export const SolutionData1 = [
         title: (
           <FormattedMessage id="Php-&-mySql" defaultMessage="Php & mySql" />
         ),
-        to: "/",
+        to: "/php&mysql",
       },
       {
         id: 9,
         icon: computer2,
-        title: (
-          <FormattedMessage id="developers-and-it" defaultMessage="Java" />
-        ),
-        to: "/",
+        title: <FormattedMessage id="java" defaultMessage="Java" />,
+        to: "/java",
       },
     ],
   },
@@ -347,34 +331,32 @@ export const SolutionData1 = [
 
 export const MainData2 = [
   {
-    link: <FormattedMessage id=".home()" defaultMessage=".home()" />,
-    cls: "products-link",
+    link: <FormattedMessage id="home" defaultMessage="home" />,
+    cls: "home-link",
     to: "/",
     // megamenu:<ProductsMenu />
   },
   {
-    link: <FormattedMessage id=".ourTeam()" defaultMessage=".ourTeam()" />,
-    cls: "about-link",
+    link: <FormattedMessage id="ourTeam" defaultMessage="our team" />,
+    cls: "ourTeam-link",
     to: "/ourTeam",
     // megamenu:<CompanyMenu />
   },
   {
-    link: <FormattedMessage id=".aboutUs()" defaultMessage=".aboutUs()" />,
-    cls: "resources-link",
-    to: "/",
+    link: <FormattedMessage id="aboutUs" defaultMessage="about us" />,
+    cls: "aboutUs-link",
+    to: "/aboutUs",
     // megamenu:<ResourcesMenu />
   },
   {
-    link: <FormattedMessage id=".projects()" defaultMessage=".projects()" />,
-    cls: "solutions-link",
-    to: "/",
+    link: <FormattedMessage id="projects" defaultMessage="projects" />,
+    cls: "projects-link",
+    to: "/projects",
     megamenu: <SolutionsMenu />,
   },
   {
-    link: (
-      <FormattedMessage id=".activities()" defaultMessage=".activities()" />
-    ),
-    cls: "contact-link",
+    link: <FormattedMessage id="activities" defaultMessage="activities" />,
+    cls: "activities-link",
     to: "/",
     megamenu: <CompanyMenu />,
   },

@@ -48,13 +48,13 @@ const Korikula = () => {
                     </div> */}
                   </div>
                   <div className="btnKorrikula">
-                    <Link>
+                    <Link className="hover-button">
                       <FormattedMessage
                         id="view-details"
                         defaultMessage=".readMore()"
                       />
                     </Link>
-                    <Link>
+                    <Link className="hover-button">
                       <FormattedMessage
                         id="register"
                         defaultMessage=".register()"

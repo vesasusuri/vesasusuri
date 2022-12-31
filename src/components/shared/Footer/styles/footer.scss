@@ -17,7 +17,8 @@
         font-weight: 500;
         margin: max(10px, 1vw) 0 max(15px, 1.5vw);
     }
-    a{ margin:0 auto; }
+    a{ margin:0 auto;        font-family: 'Prosto One', cursive;
+    }
 }
 
 .shared-footer .all-footer-links{
@@ -54,6 +55,7 @@
             margin:max(7.5px, 0.55vw) 0;
             transition: 0.1s ease-in;
             -webkit-transition: 0.1s ease-in;
+
         }
         a:hover{
             color: var(--main-color);
@@ -117,12 +119,6 @@
         height: max(20px, 1.35vw);
         margin-right: max(7.5px, 0.55vw);
     }
-    // .icon1{
-    //     content: url('../../../assets/shared/google-play.svg');
-    // }
-    // .icon2{
-    //     content: url('../../../assets/shared/app-store.svg');
-    // }
     .center-links{
         display: flex;
         justify-content: center;

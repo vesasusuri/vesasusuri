@@ -1,12 +1,11 @@
 .korrikulatitle {
   color: #ececec;
-  font-weight: 900;
-  position: absolute;
-  font-size: 20px;
-  top: 80px;
-  left: 110px;
-  font-family: "Red Hat Mono", monospace;
-  text-shadow: 8px 0px 19px rgba(0, 0, 0, 0.888);
+    font-weight: 900;
+    position: absolute;
+    font-size: 28px;
+    top: 80px;
+    left: 110px;
+    text-shadow: 8px 0px 19px rgba(0, 0, 0, 0.888);
   .changecolor {
     color: violet;
     font-size: 30px;
@@ -36,6 +35,7 @@ p {
   padding: 0 6%;
   h1 {
     font-size: max(25px, 3vw);
+    font-family: 'Prosto One', cursive;
   }
   .shared-text {
     margin: max(7.5px, 0.75vw) 0 max(30px, 3vw);
@@ -57,9 +57,7 @@ p {
   padding: max(17.5px, 1.75vw);
   border-radius: max(7.5px, 0.75vw);
   margin-bottom: max(30px, 2.5vw);
-
-  box-shadow: rgba(50, 50, 93, 0.1) 0px 10px 20px -5px,
-    rgba(0, 0, 0, 0.15) 0px 6px 12px -8px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 10px 20px -5px,rgba(0, 0, 0, 0.15) 0px 6px 12px -8px;
   position: relative;
   overflow: hidden;
   transition: 0.3s ease-in-out;
@@ -140,6 +138,7 @@ p {
     font-size: max(17px, 1vw);
     margin-bottom: max(15px, 1.25vw);
     color: #eee;
+    font-family: 'Prosto One', cursive;
   }
   .bottom {
     // flex: 1;
@@ -172,19 +171,7 @@ p {
     color: #2a2a2a;
   }
   .bottom a {
-    border: 1px solid var(--main-color);
-    color: var(--main-color);
-    font-size: max(13px, 0.825vw);
-    padding: max(10px, 0.65vw) max(17.5px, 1.25vw) max(9px, 0.6vw);
-    margin-top: max(10px, 1vw);
-    width: fit-content;
-    border-radius: 100vmax;
-    transition: 0.1s ease-in-out;
-    -webkit-transition: 0.1s ease-in-out;
-    &:hover {
-      color: #fff;
-      background: var(--main-color);
-    }
+    color: white;
   }
 
   .btnKorrikula {

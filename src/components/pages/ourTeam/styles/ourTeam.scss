@@ -2,6 +2,7 @@
   font-size: 30px;
   text-align: center;
   padding: 40px 0 0 0;
+  font-family: 'Prosto One', cursive;
   @media (max-width: 451px) {
     font-size: 17px;
   }
@@ -18,9 +19,6 @@
   background-color: #1f1f1f;
   border-radius: 25px;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
-  // box-shadow: rgba(240, 46, 170, 0.4) 5px 5px;
-  // border-top: 7px solid #ff1ce8;
-  // border-right: 7px solid #ff1ce8;
   margin-bottom: 40px;
   @media (max-width: 1000px) {
     .ourTeamInsideDiv {
@@ -42,18 +40,19 @@
     .profile{
         opacity: 50%;
     }
-    .buttonclose {
+    .hover-button02 {
       display: flex;
+      color: white;
     }
   }
   .colorpink {
     color: #ff1ce8;
-    font-family: "Red Hat Mono", monospace;
+    font-family: 'Prosto One', cursive;
   }
   .role {
     @media (max-width: 451px) {
       padding-top: 20px;
-      font-family: "Red Hat Mono", monospace;
+      font-family: 'Prosto One', cursive;
     }
   }
 }
@@ -75,6 +74,7 @@
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
+  font-family: 'Prosto One', cursive;
 }
 
 .ourTeamInsideDiv .info p {
@@ -85,6 +85,7 @@
   align-items: center;
   font-size: 16.5px;
   color: #ffffff;
+  font-family: 'Prosto One', cursive;
 }
 .comment {
   font-size: max(13px, 0.85vw);
@@ -100,29 +101,12 @@ button {
   background-color: transparent;
   border: none;
   opacity: 90%;
+  color: white;
 }
-.buttonclose {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: fit-content;
-  background: #ff1ce8;
-  color: #fff;
-  font-size: max(14px, 0.85vw);
-  padding: 11px 11px;
-  border-radius: 100vmax;
-  min-width: max(7vw, 110px);
-  svg {
-    font-size: max(17.5px, 1.1vw);
-    margin-left: max(7.5px, 0.5vw);
-  }
-  &:hover {
-    animation: pulse-white 0.7s ease-in-out;
-    -webkit-animation: pulse-white 0.7s ease-in-out;
-  }
+.hover-button02{
   display: none;
 }
+
 .profile {
   height: 192px;
   width: 290px;

@@ -1,5 +1,5 @@
 import './styles/footer.scss'
-import React, { useState } from 'react';
+import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 import { FooterData } from './data'

@@ -1,7 +1,5 @@
 import React from 'react'
 import './styles/Carousel3.scss'
-import { Link } from 'react-router-dom'
-import { BsArrowRight } from 'react-icons/bs'
 import { FormattedMessage } from 'react-intl'
 import Carousel from 'react-elastic-carousel'
 import { Data4 } from './data'

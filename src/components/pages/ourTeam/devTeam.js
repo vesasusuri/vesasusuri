@@ -26,7 +26,7 @@ function DevTeam() {
                 <h6 className="name">{props.emri}</h6>
                 <img src={lineimg} className="pic" />
                 <p className="role"><span className="colorpink">.</span>{props.role}<span className="colorpink">()</span></p>
-                <button className="buttonclose">.{props.closeBTN}()</button>
+                <button className="hover-button02">{props.closeBTN}</button>
               </div>
             </div>
           );

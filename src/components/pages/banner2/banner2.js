@@ -8,7 +8,7 @@ function Banner2() {
         <h1>
           <FormattedMessage
             id="programming-banner2"
-            defaultMessage=".programming() for ages 8-18 years"
+            defaultMessage="programming for ages 8-18 years"
           />
         </h1>
         <p>

@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
 import { CgClose } from "react-icons/cg";
-import { MdApps, MdKeyboardArrowDown } from "react-icons/md";
-import { BiSliderAlt, BiCategoryAlt, BiBold, BiCart } from "react-icons/bi";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { RiTeamFill } from "react-icons/ri";
+import { BiHome, BiCategoryAlt } from "react-icons/bi";
 
 import { Activities, CompanyData2 } from "../../Nav/Megamenus/data";
-// import { PanelData } from '../../Navbar/CoursesMenu/data';
 
 const Sidebar = (props) => {
   const [list3, showList3] = useState(false);
@@ -35,7 +35,7 @@ const Sidebar = (props) => {
         <div className="sidebar-dropdown">
           <div className="nav-sidebar-link">
             <Link to="/" className="nav-anchor">
-              <BiSliderAlt />
+              <BiHome />
               <FormattedMessage id="courses" defaultMessage=".home()" />
             </Link>
           </div>
@@ -44,7 +44,7 @@ const Sidebar = (props) => {
         <div className="sidebar-dropdown">
           <div className="nav-sidebar-link">
             <Link to="/ourTeam" className="nav-anchor">
-              <BiCategoryAlt />
+              <RiTeamFill />
               <FormattedMessage id="About" defaultMessage=".ourTeam()" />
             </Link>
           </div>
@@ -53,7 +53,7 @@ const Sidebar = (props) => {
         <div className="sidebar-dropdown">
           <div className="nav-sidebar-link">
             <Link to="/Solutions" className="nav-anchor">
-              <BiCategoryAlt />
+              <RiTeamFill />
               <FormattedMessage id="solutions" defaultMessage=".aboutUs()" />
             </Link>
           </div>
@@ -62,7 +62,7 @@ const Sidebar = (props) => {
         <div className="sidebar-dropdown">
           <div className="nav-sidebar-link" onClick={show3}>
             <Link to="/" className="nav-anchor">
-              <BiBold />
+              <BiCategoryAlt />
               <FormattedMessage id="projects" defaultMessage=".projects()" />
             </Link>
             <div className="dropdown-arrow">

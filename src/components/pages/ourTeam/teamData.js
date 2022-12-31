@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import man from "../../../assets/shared/young.webp"
-import ModalAlmir from "./almirModal";
-import ModalVesa from "./vesaModal";
-import ModalMal from "./malModal";
-import ModalLendriti from "./lendrititModal";
+import ModalAlmir from "../modals/almirModal";
+import ModalVesa from "../modals/vesaModal";
+import ModalMal from "../modals/malModal";
+import ModalLendriti from "../modals/lendrititModal";
 
 const DevelopersData =[
     {

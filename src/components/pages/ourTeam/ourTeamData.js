@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import man from "../../../assets/shared/young.webp"
-import SpringModal from "./modal";
-import ModalFatjona from "./modalFatjona";
-import ModalKeba from "./kebaModal";
-import ModalFloranda from "./florandaModal";
+import SpringModal from "../modals/modal";
+import ModalFatjona from "../modals/modalFatjona";
+import ModalKeba from "../modals/kebaModal";
+import ModalFloranda from "../modals/florandaModal";
 const OurTeamData =[
     {
         closeBTN:<Link><SpringModal/></Link>,

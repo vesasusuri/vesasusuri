@@ -2,7 +2,7 @@ import React from "react";
 import { CompanyData1 } from "./data";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
-// import about from "../../../../assets/nav/about.png"
+import cino from "../../../../assets/shared/2.jpg"
 const CompanyMenu = () => {
   return (
     <div className="bottom-nav-megamenu company-megamenu">
@@ -32,12 +32,6 @@ const CompanyMenu = () => {
                   })}
                 </div>
               </div>
-              {/* <div className="div-centered-item2">
-                <Link to={props.to1} className="centered-item1">
-                  <FormattedMessage id="view-all" defaultMessage="View-all" />
-                  <BsArrowRight />
-                </Link>
-              </div> */}
             </div>
           );
         })}
@@ -45,28 +39,12 @@ const CompanyMenu = () => {
       <div className="other-links">
         <h5>
           <FormattedMessage
-            id="intro-video"
-            defaultMessage="INTRODUCTION VIDEO"
+            id="cino-pic"
+            defaultMessage="Photos from random activities"
           />
         </h5>
 
-        {/* <img src={about} className="img-about-us"/> */}
-        {/* {CompanyData2.map((props) => {
-                    return(
-                        <div className="item" key={props.id}>
-                            <h6>{props.category}</h6>
-                            <div className="links2">
-                                {props.links.map((l) => {
-                                    return(
-                                        <Link to={l.to} key={l.id}>
-                                            {l.link}
-                                        </Link>
-                                    )
-                                })}
-                            </div>
-                        </div>
-                    )
-                })} */}
+        <img src={cino} className="img-about-us"/>
       </div>
     </div>
   );

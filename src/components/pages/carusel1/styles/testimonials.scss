@@ -2,10 +2,9 @@
     color: #ececec;
     font-weight: 900;
     position: absolute;
-    font-size: 20px;
+    font-size: 28px;
     top: 80px;
     left: 170px;
-    font-family: "Red Hat Mono", monospace;
     text-shadow: 8px 0px 19px rgba(0, 0, 0, 0.888);
     .changecolor {
       color: violet;
@@ -69,7 +68,7 @@ p{
     color: white;
 }
 .shared-testimonials-slider{
-    margin: max(50px, 5%) 10%;
+    margin: max(10px, 5%) 10%;
     position: relative;
     &::before{
         content: '';
@@ -79,7 +78,6 @@ p{
         left:max(15px, 1.1vw);
         right:max(15px, 1.1vw);
         background: #363844;
-        // background: url('../../../../assets/home/footer.jpg');
         border-radius: max(10px, 2vw);
     }
     .rec-pagination{ display:none; }

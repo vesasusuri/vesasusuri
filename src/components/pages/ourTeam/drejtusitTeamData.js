@@ -1,16 +1,16 @@
 import {Link} from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import man from "../../../assets/shared/young.webp"
-import ModalAnesa from "./anesaModal";
-import ModalHatixhe from "./tixheModal";
-import ModalFlori from "./floriModal";
-import ModalRoni from "./roniModal";
+import ModalAnesa from "../modals/anesaModal";
+import ModalHatixhe from "../modals/tixheModal";
+import ModalFlori from "../modals/floriModal";
+import ModalRoni from "../modals/roniModal";
 const DrejtusitData =[
     {
         img:man,
         emri:<FormattedMessage id="flori" defaultMessage="Florjan Piraj"/>,
         role:<FormattedMessage id="CEO" defaultMessage="CEO"/>,
-        closeBTN:<Link><ModalFlori/></Link>
+        closeBTN:<Link ><ModalFlori/></Link>
     },
     {
         img:man,

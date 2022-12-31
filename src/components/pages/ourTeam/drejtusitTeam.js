@@ -9,7 +9,7 @@ function DrejtuesitTeam() {
       <p className="digitalSchoolTeachersTeam">
         <FormattedMessage
           id=".digitalSchoolDrejtuesitTeam"
-          defaultMessage=".digitalSchoolDrejtuesitTeam"
+          defaultMessage=".digitalSchoolManagementTeam"
         />
       </p>
       <div className="OurTeam">
@@ -29,7 +29,7 @@ function DrejtuesitTeam() {
                   {props.role}
                   <span className="colorpink">()</span>
                 </p>
-                <button className="buttonclose">.{props.closeBTN}()</button>
+                <button className="hover-button02">{props.closeBTN}</button>
               </div>
             </div>
           );

@@ -57,7 +57,7 @@ const BottomNav = () => {
                     <Link to='/login' className='link1'>
                         <FormattedMessage id='.logIn()' defaultMessage='.logIn()' />
                     </Link>
-                    <Link to='/signup' className='link2'>
+                    <Link to='/signup' className='hover-button'>
                         <FormattedMessage id='.signUp()' defaultMessage='.signUp()' />
                     </Link>
                 </div>

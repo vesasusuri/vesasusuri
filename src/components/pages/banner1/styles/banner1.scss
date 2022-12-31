@@ -12,34 +12,12 @@
   }
 }
 
-.ad-exchange2 {
-  position: relative;
-  background: url("../../../../assets/shared/gradient.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25rem;
-  background-attachment: fixed;
-  z-index: 1;
-  color: #fff;
-  padding: max(130px, 10vw) 7.5%;
-  clip-path: polygon(100% 0, 100% 40%, 100% 59%, 0 91%, 0 0, 70% 0);
-}
-.divText{
-  margin-left: 10%;
-}
-
-.ad-exchange{
-  margin-top: -540px;
-  z-index: 2;
-  position: absolute;
-  
-}
 .h1 {
   width: 30rem;
   color: white;
   font-size: 30px;
-  font-family: "Red Hat Mono", monospace;
-  @media(max-width:400px){
+  font-family: "Prosto One", cursive;
+  @media (max-width: 400px) {
     font-size: 25px;
     width: 20rem;
   }
@@ -51,194 +29,17 @@
   padding-top: max(23px, 1.3vw);
   font-size: max(14px, 0.6vw);
   font-family: "Red Hat Mono", monospace;
-  @media(max-width:400px){
-    font-size:12px;
+  @media (max-width: 400px) {
+    font-size: 12px;
   }
 }
 
-.ad-exchange .main .row {
-  margin-bottom: max(30px, 6.5vw);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  .shared-main-item1 {
-    width: 40%;
-    p {
-      color: #fff;
-      margin-bottom: max(20px, 1.5vw);
-    }
-  }
-  .img-container {
-    width: 42.5%;
-    position: relative;
-  }
-  .img {
-    content: url("../../../../assets/home/telBanner.png");
-    width: 80%;
-  }
-  .card {
-    position: absolute;
-    width: fit-content;
-    max-width: 55%;
-    display: flex;
-    align-items: center;
-    background: #0f0f20;
-    padding: max(9px, 1vw) max(15px, 2.5vw);
-    font-size: max(11px, 0.85vw);
-    left: 17.5%;
-    bottom: 10%;
-    z-index: 2;
-  }
-  .icon {
-    height: max(16px, 1.1vw);
-    margin-right: max(10px, 1vw);
-  }
+.word {
+  color: white;
+  font: 700 normal 35px "tahoma";
+  text-shadow: 5px 2px #1d0330, 2px 4px #330256, 3px 5px #210237;
+  display: inline;
 }
-
-@media (max-width: 835px) {
-  .divBtn{
-    margin-left: -50px;
-    transition: 1s all ease;
-  }
-}
-
-@media (max-width: 803px) {
-  .divBtn{
-    margin-left: -80px;
-    transition: 1s all ease;
-  }
-}
-
-@media (max-width: 766px) {
-  .divBtn{
-    margin-left: -120px;
-    transition: 1s all ease;
-  }
-}
-
-@media (max-width: 676px) {
-  .divBtn{
-    margin-left: -150px;
-    transition: 1s all ease;
-  }
-}
-
-@media (max-width: 599px) {
-  .divBtn{
-    margin-left: -180px;
-    transition: 1s all ease;
-  }
-}
-@media (max-width: 530px) {
-  .divBtn{
-    margin-left: -210px;
-    transition: 1s all ease;
-  }
-}
-
-@media (max-width: 487px) {
-  .divBtn{
-    margin-left: -240px;
-    transition: 1s all ease;
-  }
-}
-
-@media (max-width: 417px) {
-  .divBtn{
-    margin-left: -280px;
-    transition: 1s all ease;
-  }
-}
-.ad-exchange .main .items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  .item {
-    width: 25%;
-    &:hover .icon {
-      animation: hvr-icon-wobble-horizontal 1s linear;
-      -webkit-animation: hvr-icon-wobble-horizontal 1s linear;
-    }
-  }
-  .icon {
-    height: max(25px, 2vw);
-  }
-  h6 {
-    font-size: max(14px, 0.95vw);
-    margin: max(10px, 1vw) 0;
-  }
-  p {
-    font-size: max(12px, 0.8vw);
-  }
-}
-
-@media (max-width: 1200px) {
-  .h1{
-    width: 100%;
-  }
-  .p1{
-    width: 100%;
-  }
-
-  .divBtn{
-    padding-left: 250px;
-  }
-
-  .ad-exchange .main .row .img{
-    padding-top: 20px;
-  }
-
-  .ad-exchange .main {
-    padding: 130px 5%;
-  }
-  .ad-exchange .main .row {
-    .shared-main-item1 {
-      width: 42.5%;
-    }
-    .img-container {
-      width: 45%;
-    }
-  }
-  .ad-exchange .main .items .item {
-    width: 27.5%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .ad-exchange .main {
-    background-attachment: unset;
-  }
-  .ad-exchange .main .row {
-    .shared-main-item1 {
-      width: 100%;
-      text-align: center;
-      a {
-        margin-inline: auto;
-      }
-    }
-    .img-container {
-      width: 100%;
-      // max-width: 100%;
-      margin: 0px auto 0;
-      padding-left: 30px;
-    }
-  }
-
-  .ad-exchange .main .items {
-    justify-content: center;
-    .item {
-      width: 300px;
-      max-width: 96%;
-      margin: 25px 2%;
-      text-align: center;
-      .icon {
-        margin-inline: auto;
-      }
-    }
-  }
-}
-
 @-webkit-keyframes hvr-icon-push {
   50% {
     -webkit-transform: scale(0.5);
@@ -249,5 +50,129 @@
   50% {
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
+  }
+}
+
+.manage-advertising {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: space-around;
+  background: url("../../../../assets/shared/gradient.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: max(50px, 5%) 7.5% max(50px, 5%) 15%;
+  .img-container {
+    width: 32.5%;
+    position: relative;
+  }
+  .shared-main-item1 {
+    width: 41%;
+    p {
+      color: #fff;
+    }
+  }
+  .img {
+    position: relative;
+    width: 100%;
+  }
+  .inner-img {
+    width: 100%;
+    content: url("../../../../assets/home/telBanner.png");
+  }
+  .card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    padding: max(10px, 1vw);
+    width: 50%;
+    right: -2px;
+    top: 20%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: max(12.5px, 0.8vw);
+    border-radius: 0 max(5px, 0.5vw) max(5px, 0.5vw) 0;
+  }
+  .squares {
+    position: absolute;
+    left: max(5px, 0.5vw);
+    bottom: 0;
+    width: 28%;
+    padding-top: 28%;
+    &::before,
+    &::after {
+      position: absolute;
+      width: 49%;
+      padding-top: 49%;
+      content: "";
+      border-radius: max(5px, 0.4vw);
+    }
+    &::before {
+      top: 0;
+      right: 0;
+      background: #eec7fc;
+    }
+    &::after {
+      left: 0;
+      bottom: 0;
+      background: #d175f2;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .pejndiv {
+    .img-container {
+      width: 35%;
+    }
+    .shared-main-item1 {
+      width: 42.5%;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .pejndiv{
+    padding: 50px 5% 50px 12.5%;
+    .img-container {
+      width: 37.5%;
+    }
+    .shared-main-item1 {
+      width: 45%;
+    }
+  }
+}
+
+.pejndiv{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  .pejndiv{
+    padding: 50px 5%;
+    flex-direction: column-reverse;
+    background-attachment: unset;
+    .img-container {
+      width: 400px;
+      max-width: 100%;
+      margin: 35px auto 0;
+    }
+    .shared-main-item1 {
+      width: 100%;
+      text-align: center;
+      a {
+        margin-inline: auto;
+      }
+    }
+    .h1 {
+      width: 100%;
+    }
+    .p1 {
+      width: 100%;
+    }
   }
 }

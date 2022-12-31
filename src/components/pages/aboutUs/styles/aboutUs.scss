@@ -1,0 +1,74 @@
+.shared-automation-tools{
+    margin: max(50px, 5%) 0;
+    padding:0 7.5% 0 0;
+    display: flex;
+    .items{
+        position: relative;
+        width: 45%;
+        padding: max(30px, 3vw) 0 max(15px, 1.5vw) 20%;
+    }
+    .shared-main-item1{
+        width: 38.5%;
+    }
+    .img{
+        position: absolute;
+        height: 100%;
+        width: 85%;
+        left:0;
+        top:0;
+        background: url('../../../../assets/home/aboutUsimg.JPG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 max(20px, 3vw) 0 0;
+    }
+}
+.bannerAboutUsText{
+    font-size: 35px;
+    font-family: "Prosto One", cursive;
+    font-weight:700; 
+}
+.wordsAboutUS{
+    width: 40rem;
+}
+@media(max-width:1350px){
+    .shared-automation-tools .items{
+            width: 48%;
+    }
+}
+
+@media(max-width:1200px){
+    .shared-automation-tools{
+        padding:0 5% 0 0;
+        .items{
+            width: 50%;
+            padding: max(30px, 3vw) 0 max(15px, 1.5vw) 15%;
+        }
+        .wordsAboutUS{
+            width: auto;
+        }
+        .img{
+            height: 100%;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .shared-automation-tools{
+        padding:0 5%;
+        flex-direction: column-reverse;
+        .items{
+            width: 400px;
+            max-width: 100%;
+            padding: 30px 0 15px 5%;
+        }
+        .wordsAboutUS{
+            width: 100%;
+            text-align: center;
+            margin: 0 0 30px;
+            a{ margin-inline: auto; }
+        }
+        .img{
+            display: none;
+        }
+    } 
+}
