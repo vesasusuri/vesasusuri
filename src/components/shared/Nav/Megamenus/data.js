@@ -15,85 +15,34 @@ export const ResourcesData1 = [
       {
         id: 1,
         icon: computer2,
-        title: (
-          <FormattedMessage
-            id="how-pay2gate-works"
-            defaultMessage="How Pay2Gate Works"
-          />
-        ),
-        text: (
-          <FormattedMessage
-            id="intro-video1"
-            defaultMessage="See Our Introduction Video"
-          />
-        ),
         to: "/",
       },
       {
         id: 2,
         icon: computer2,
-        title: (
-          <FormattedMessage id="help-center" defaultMessage="Help Center" />
-        ),
-        text: (
-          <FormattedMessage
-            id="more-about-tearms"
-            defaultMessage="Learn More About Tearms Of Use"
-          />
-        ),
         to: "/",
       },
       {
         id: 3,
         icon: computer2,
         title: <FormattedMessage id="support" defaultMessage="Support" />,
-        text: (
-          <FormattedMessage
-            id="pay2gate-offers"
-            defaultMessage="Pay2Gate offers 24/7 Support"
-          />
-        ),
         to: "/",
       },
       {
         id: 4,
         icon: computer2,
-        title: (
-          <FormattedMessage
-            id="become-a-partner"
-            defaultMessage="Become A Partner"
-          />
-        ),
-        text: (
-          <FormattedMessage
-            id="connect-with-us"
-            defaultMessage="Connect With Us On Different Level"
-          />
-        ),
         to: "/",
       },
       {
         id: 5,
         icon: computer2,
         title: <FormattedMessage id="blog" defaultMessage="Blog" />,
-        text: (
-          <FormattedMessage
-            id="check-out-our-blog"
-            defaultMessage="Check Out Our Blog"
-          />
-        ),
         to: "/",
       },
       {
         id: 6,
         icon: computer2,
         title: <FormattedMessage id="faq" defaultMessage="FAQ's" />,
-        text: (
-          <FormattedMessage
-            id="have-some-questions"
-            defaultMessage="Have Some Questions?"
-          />
-        ),
         to: "/",
       },
     ],
@@ -160,13 +109,6 @@ export const Activities = [
   },
   {
     category: (
-      <FormattedMessage id="spring-camp" defaultMessage="Spring Camp" />
-    ),
-    to: "/",
-    id: "spring-camp",
-  },
-  {
-    category: (
       <FormattedMessage id="summer-school" defaultMessage="Summer School" />
     ),
     to: "/",
@@ -221,35 +163,21 @@ export const CompanyData1 = [
         to: "/",
       },
       {
-        id: 3,
-        icon: computer2,
-        title: (
-          <FormattedMessage id="Spring-Camp" defaultMessage="Spring Camp" />
-        ),
-        to: "/",
-      },
-      {
         id: 4,
         icon: computer2,
-        title: (
-          <FormattedMessage id="tournaments" defaultMessage="Tournaments" />
-        ),
+        title: <FormattedMessage id="tournaments" defaultMessage="Tournaments" />,
         to: "/",
       },
       {
         id: 5,
         icon: computer2,
-        title: (
-          <FormattedMessage id="Summer-School" defaultMessage="Summer School" />
-        ),
+        title: <FormattedMessage id="Summer-School" defaultMessage="Summer School" />,
         to: "/",
       },
       {
         id: 6,
         icon: computer2,
-        title: (
-          <FormattedMessage id="Other-courses" defaultMessage="Other courses" />
-        ),
+        title: <FormattedMessage id="Other-courses" defaultMessage="Other courses" />,
         to: "/",
       },
     ],
